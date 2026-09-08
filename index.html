@@ -49,10 +49,10 @@ body{
   box-shadow:0 -2px 14px rgba(0,0,0,.06)
 }
 #tabs button{
-  flex:1;background:none;border:0;padding:9px 2px 8px;font-size:9.5px;font-weight:600;
+  flex:1;background:none;border:0;padding:9px 1px 8px;font-size:8.5px;font-weight:600;
   color:#9A9589;font-family:inherit;cursor:pointer;transition:color .15s
 }
-#tabs button b{display:block;font-size:20px;font-weight:400;margin-bottom:2px;line-height:1}
+#tabs button b{display:block;font-size:18px;font-weight:400;margin-bottom:2px;line-height:1}
 #tabs button.on{color:#2F5233}
 #tabs button.on b{transform:translateY(-1px)}
 /* ---------- LAYOUT ---------- */
@@ -140,6 +140,23 @@ h3{font-size:13px;margin:18px 0 9px;color:#6D6A61;font-weight:700;text-transform
 }
 .heroin #bd-cd{font-size:24px;font-weight:800;letter-spacing:-.5px;text-shadow:0 1px 8px rgba(0,0,0,.45)}
 .heroin .herod{font-size:12px;opacity:.9;margin-top:4px;letter-spacing:.4px}
+/* ---------- NOTA DEL DÍA 5 ---------- */
+.d5note{
+  font-size:12px;line-height:1.6;color:#5F5A4E;background:#FFFCF6;
+  border:1px solid #E8DCC4;border-radius:11px;padding:11px 12px;margin-top:11px
+}
+.d5note b{color:#8A5A1E}
+/* ---------- SUPERSERIE ---------- */
+.ssnote{
+  font-size:11.5px;color:#5B4B85;background:#F6F4FA;border:1px solid #DFDAEA;
+  border-radius:9px;padding:8px 10px;margin-top:9px;line-height:1.5
+}
+/* ---------- ALTERNATIVAS ---------- */
+.alt{display:none;background:#F6F4FA;border:1px solid #DFDAEA;border-radius:11px;padding:12px;margin:10px 0 2px}
+.alt.on{display:block}
+.alt>b{font-size:10.5px;color:#5B4B85;letter-spacing:.5px;text-transform:uppercase;display:block;margin-bottom:7px}
+.alt>div{font-size:12.5px;line-height:1.7;color:#4A4740}
+.alt>em{display:block;font-style:normal;font-size:11px;color:#8A867C;margin-top:9px;line-height:1.5}
 /* ---------- MINI GRÁFICO POR EJERCICIO ---------- */
 .evo{display:none;background:#FAFAF8;border:1px solid #E5E1D9;border-radius:11px;padding:12px;margin:10px 0 2px}
 .evo.on{display:block}
@@ -197,6 +214,123 @@ h3{font-size:13px;margin:18px 0 9px;color:#6D6A61;font-weight:700;text-transform
 .rirb.tgt{border-color:#2F5233;border-width:2px}
 .rirb.tgt.on{border-color:#2F5233}
 .rirtgt{font-size:10.5px;color:#2F5233;font-weight:700;font-style:normal;letter-spacing:.3px}
+/* ---------- VUELTA A LA CALMA ---------- */
+.cool{
+  background:#F2F7F4;border:1px solid #D3E4DA;border-radius:13px;padding:13px;margin-bottom:12px
+}
+.cool.done{background:#F1F7F1;border-color:#CCE2CC}
+.cool h4{margin:0 0 9px;font-size:12px;color:#3E7A5A;text-transform:uppercase;letter-spacing:.7px}
+.cool>div{font-size:12.5px;line-height:1.6;color:#4A4740}
+/* ---------- MEDIDAS ---------- */
+.mgrid{display:flex;gap:8px}
+.mgrid>div{flex:1;min-width:0}
+.mgrid label{display:block;font-size:10px;color:#9A9589;font-weight:700;letter-spacing:.4px;margin-bottom:4px}
+.mgrid input{
+  width:100%;border:1px solid #E1DDD5;border-radius:10px;padding:11px 4px;font-size:16px;
+  text-align:center;font-family:inherit;background:#FCFBF9;font-weight:600
+}
+.mrow{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid #F3EFE7;font-size:12.5px}
+.mrow:last-child{border-bottom:0}
+.mrow .md{width:52px;flex:0 0 auto;color:#8A867C;font-weight:600}
+.mrow .mv{flex:1;font-weight:600}
+.mrow .mv em{font-style:normal;color:#8A867C;font-weight:500}
+.mrow button{width:26px;height:26px;border:0;background:none;color:#C4C0B6;font-size:14px;cursor:pointer;font-family:inherit}
+.mrow2{border-bottom:1px solid #F3EFE7;padding:9px 0}
+.mrow2:last-child{border-bottom:0}
+.mfecha{display:flex;align-items:center;font-size:11px;font-weight:800;color:#8A867C;
+  text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
+.mfecha button{margin-left:auto;width:24px;height:24px;border:0;background:none;
+  color:#C4C0B6;font-size:13px;cursor:pointer;font-family:inherit;padding:0}
+.mvals{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:#5F5A4E}
+.mvals b{font-weight:700;color:#22261F;margin-left:3px}
+.mvals i{font-style:normal;font-size:11px;font-weight:700;margin-left:5px}
+.mvals .ib{color:#2F5233}
+.mvals .is{color:#B5811F}
+.mvals .ig{color:#B0ABA0}
+/* ---------- TABLA DE PESOS ---------- */
+.wgh{
+  font-size:10px;font-weight:800;color:#2F5233;text-transform:uppercase;letter-spacing:.7px;
+  margin:14px 0 7px;padding-bottom:5px;border-bottom:1px solid #EFEBE3
+}
+.wgh:first-child{margin-top:0}
+.wrowx{display:flex;align-items:center;gap:8px;padding:5px 0;font-size:12.5px}
+.wn{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.wd{width:44px;flex:0 0 auto;text-align:right;font-size:11px;font-weight:700;color:#2F5233}
+.wd em{font-style:normal;color:#B0ABA0;font-weight:600}
+.wrowx input{
+  width:62px;flex:0 0 auto;border:1px solid #E1DDD5;border-radius:8px;padding:8px 4px;
+  font-size:14px;text-align:center;font-family:inherit;background:#FCFBF9;font-weight:700
+}
+/* ---------- DESCANSO ---------- */
+.restrow{
+  display:flex;align-items:center;gap:9px;margin-top:9px;padding-top:9px;
+  border-top:1px solid #F0ECE4
+}
+.restlbl{flex:1;font-size:11.5px;color:#8A867C;font-weight:600}
+.restbtn{
+  padding:9px 14px;border-radius:9px;border:1.5px solid #2F5233;background:#fff;
+  color:#2F5233;font-weight:700;font-size:13px;font-family:inherit;cursor:pointer;white-space:nowrap
+}
+.restbtn:active{background:#2F5233;color:#fff}
+#restbar{
+  position:fixed;left:0;right:0;bottom:calc(74px + env(safe-area-inset-bottom));
+  z-index:150;background:#22261F;color:#fff;display:none;
+  box-shadow:0 -4px 20px rgba(0,0,0,.28)
+}
+#restbar.on{display:block}
+#restbar.done{background:#2F5233}
+.rbin{display:flex;align-items:center;gap:11px;padding:12px 15px}
+.rbtxt{flex:1;min-width:0}
+.rbtxt b{font-size:23px;font-weight:800;letter-spacing:-.5px;line-height:1;display:block}
+.rbtxt span{font-size:11px;opacity:.72;display:block;margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rbadd,.rbx{
+  border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.1);color:#fff;
+  border-radius:9px;font-family:inherit;font-weight:700;cursor:pointer;flex:0 0 auto
+}
+.rbadd{padding:9px 12px;font-size:12.5px}
+.rbx{width:34px;height:34px;font-size:14px;padding:0}
+.rbprog{height:3px;background:rgba(255,255,255,.18)}
+.rbprog>i{display:block;height:100%;background:#E8A33D;width:100%;transition:width 1s linear}
+#restbar.done .rbprog>i{background:#8FD18F}
+/* ---------- CALENDARIO ---------- */
+.calnav{display:flex;align-items:center;gap:9px;margin-bottom:12px}
+.calnav button{
+  width:38px;height:38px;border-radius:11px;border:1px solid #E1DDD5;background:#fff;
+  font-size:17px;color:#2F5233;cursor:pointer;flex:0 0 auto;font-family:inherit
+}
+#calmonth{flex:1;text-align:center;font-weight:700;font-size:15px;text-transform:capitalize}
+#calmonth small{display:block;font-size:10.5px;color:#8A867C;font-weight:600;margin-top:2px;text-transform:none}
+.caldow{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:5px}
+.caldow span{text-align:center;font-size:9.5px;font-weight:800;color:#9A9589;letter-spacing:.4px}
+.calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.cell{
+  aspect-ratio:1;border-radius:9px;background:#FAF8F5;border:1px solid transparent;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  cursor:pointer;position:relative;padding:2px
+}
+.cell.pad{background:none;cursor:default}
+.cell.today{border-color:#2F5233;border-width:1.5px}
+.cell.sel{background:#2F5233}
+.cell.sel .cd{color:#fff}
+.cell.future{opacity:.45}
+.cd{font-size:12px;font-weight:700;color:#4A4740;line-height:1}
+.cdots{display:flex;gap:2px;margin-top:3px;height:5px;align-items:center}
+.cdots i{width:5px;height:5px;border-radius:50%;display:block}
+.dot-s{background:#2F5233}
+.dot-b{background:#E8A33D}
+.dot-c{background:#6B9BD1}
+.dot-p{background:#C4677A}
+.dot-w{background:#8A7BB8}
+.callegend{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px;justify-content:center}
+.callegend span{font-size:9.5px;color:#6D6A61;font-weight:600;display:flex;align-items:center;gap:4px}
+.callegend i{width:7px;height:7px;border-radius:50%;display:inline-block}
+.lg-s{background:#2F5233}.lg-b{background:#E8A33D}.lg-c{background:#6B9BD1}
+.lg-p{background:#C4677A}.lg-w{background:#8A7BB8}
+#caldetail{display:none}
+#caldetail h2{margin-bottom:4px}
+.dtline{font-size:12.5px;color:#5F5A4E;line-height:1.6;padding:7px 0;border-bottom:1px solid #F0ECE4}
+.dtline:last-child{border-bottom:0}
+.dtline b{color:#22261F}
 /* ---------- HECHO POR EJERCICIO ---------- */
 .exdone{
   width:26px;height:26px;flex:0 0 auto;border-radius:8px;border:1.5px solid #D5D0C6;
@@ -226,6 +360,8 @@ h3{font-size:13px;margin:18px 0 9px;color:#6D6A61;font-weight:700;text-transform
   font-family:inherit;background:#FCFBF9;font-weight:600;color:#22261F
 }
 /* ---------- GRID DE SERIES ---------- */
+.kgwhy{font-size:11.5px;color:#2F5233;background:#F1F7F1;border:1px solid #CCE2CC;
+  border-radius:9px;padding:8px 10px;margin-bottom:9px;line-height:1.5;font-weight:600}
 .rirtarget{font-size:11.5px;color:#2F5233;font-weight:600;margin-bottom:9px}
 .rirtarget b{font-weight:800}
 .setgrid{margin-bottom:4px}
@@ -265,6 +401,10 @@ h3{font-size:13px;margin:18px 0 9px;color:#6D6A61;font-weight:700;text-transform
 .btn:active{transform:scale(.99)}
 .btn.sec{background:#fff;color:#2F5233;border:1.5px solid #2F5233}
 .btn.warn{background:#B5811F}
+.btn.skip{background:#fff;color:#8A867C;border:1.5px solid #DEDAD2;margin-top:9px}
+.btn.skip.on{background:#F4F1EC;color:#6D6A61;border-color:#C4C0B6}
+.day.skipped{background:#F7F5F2;border-color:#E1DDD5;opacity:.72}
+.day.skipped .dnum{background:#E5E1D9;color:#9A9589}
 /* ---------- BODABOARD ---------- */
 .mile{display:flex;gap:12px;margin-bottom:2px}
 .mrail{width:26px;display:flex;flex-direction:column;align-items:center;flex:0 0 auto}
@@ -348,6 +488,11 @@ select{
   font-size:14px;background:#FCFBF9;margin-bottom:11px;font-weight:600
 }
 canvas{max-width:100%}
+.chartbox{position:relative;width:100%;margin-top:12px}
+.chartbox.sm{height:150px}
+.chartbox.md{height:180px}
+.chartbox.xs{height:120px}
+.chartbox>canvas{position:absolute;top:0;left:0;width:100%!important;height:100%!important}
 </style>
 </head>
 <body>
@@ -414,11 +559,25 @@ canvas{max-width:100%}
   <div class="card">
     <h2>Peso</h2>
     <div class="wrow">
-      <input type="number" step="0.1" id="winput" placeholder="kg" inputmode="decimal">
+      <input type="text" id="winput" placeholder="kg" inputmode="decimal">
       <button onclick="saveWeight()">Guardar</button>
     </div>
     <div class="muted" id="whint"></div>
-    <canvas id="wchart" height="150" style="margin-top:12px"></canvas>
+    <div class="chartbox sm"><canvas id="wchart"></canvas></div>
+    <div id="wlist" style="margin-top:12px"></div>
+  </div>
+  <div class="card">
+    <h2>Medidas</h2>
+    <p class="muted">Mídete en ayunas, sin apretar la cinta y siempre en el mismo sitio: pecho por la parte más ancha, cintura por el punto más estrecho (encima del ombligo) y cadera por la parte más ancha del glúteo.</p>
+    <div class="mgrid">
+      <div><label>Pecho</label><input type="text" inputmode="decimal" id="m-pecho" placeholder="cm"></div>
+      <div><label>Cintura</label><input type="text" inputmode="decimal" id="m-cintura" placeholder="cm"></div>
+      <div><label>Cadera</label><input type="text" inputmode="decimal" id="m-cadera" placeholder="cm"></div>
+    </div>
+    <button class="btn" style="margin-top:11px" onclick="saveMeasures()">Guardar medidas</button>
+    <div class="muted" id="mhint" style="margin-top:11px"></div>
+    <div class="chartbox md"><canvas id="mchart"></canvas></div>
+    <div id="mlist" style="margin-top:12px"></div>
   </div>
   <div class="card">
     <h2>Fotos de progreso</h2>
@@ -428,10 +587,16 @@ canvas{max-width:100%}
     <div class="muted" id="photohint"></div>
   </div>
   <div class="card">
-    <h2>Progresión por ejercicio</h2>
-    <select id="exsel" onchange="renderExChart()"></select>
-    <canvas id="exchart" height="170"></canvas>
-    <div id="exdelta" style="margin-top:10px;font-size:13px;font-weight:700;color:#2F5233"></div>
+    <h2>Mis pesos actuales</h2>
+    <p class="muted">Última carga registrada de cada ejercicio. Puedes editarla aquí directamente: se usará como referencia en tu próxima sesión.</p>
+    <div id="wtable" style="margin-top:12px"></div>
+  </div>
+  <div class="card">
+    <h2>Ajustar el calendario</h2>
+    <p class="muted">Si has estado enferma, de viaje o simplemente has parado, aplaza el plan en vez de arrastrar semanas perdidas. Tu histórico no se toca: solo se recalcula en qué semana estás hoy.</p>
+    <div id="shiftinfo" class="muted" style="margin-top:10px;font-weight:600;color:#2F5233"></div>
+    <button class="btn sec" style="margin-top:11px" onclick="shiftPlan(7)">Aplazar una semana</button>
+    <button class="btn sec" style="margin-top:9px" onclick="shiftPlan(-7)">Adelantar una semana</button>
   </div>
   <div class="card">
     <h2>Datos</h2>
@@ -440,11 +605,46 @@ canvas{max-width:100%}
   </div>
 </div>
 
+<!-- ============ CALENDARIO ============ -->
+<div class="pane" id="p-cal">
+  <div class="calnav">
+    <button onclick="navMonth(-1)">‹</button>
+    <div id="calmonth"></div>
+    <button onclick="navMonth(1)">›</button>
+  </div>
+  <div class="card" style="padding:12px">
+    <div class="caldow"><span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+    <div class="calgrid" id="calgrid"></div>
+    <div class="callegend">
+      <span><i class="lg-s"></i>Sesión</span>
+      <span><i class="lg-b"></i>Bonus</span>
+      <span><i class="lg-c"></i>Solo cardio</span>
+      <span><i class="lg-p"></i>Regla</span>
+      <span><i class="lg-w"></i>Pesaje</span>
+    </div>
+  </div>
+  <div class="card" id="caldetail"></div>
+  <div class="stats">
+    <div class="stat"><b id="cal-s">0</b><span>SESIONES EN EL MES</span></div>
+    <div class="stat"><b id="cal-d">0</b><span>DÍAS ACTIVOS</span></div>
+  </div>
+</div>
+
 <div id="tabs">
   <button class="on" data-p="tr" onclick="tab('tr')"><b>🏋️</b>Entreno</button>
+  <button data-p="cal" onclick="tab('cal')"><b>📅</b>Calendario</button>
   <button data-p="bd" onclick="tab('bd')"><b>💍</b>Boda</button>
   <button data-p="cy" onclick="tab('cy')"><b>🌙</b>Ciclo</button>
   <button data-p="pg" onclick="tab('pg')"><b>📈</b>Progreso</button>
+</div>
+
+<div id="restbar">
+  <div class="rbin">
+    <div class="rbtxt"><b id="rbtime">0:00</b><span id="rbname"></span></div>
+    <button class="rbadd" onclick="restAdd(30)">+30s</button>
+    <button class="rbx" onclick="restStop()">✕</button>
+  </div>
+  <div class="rbprog"><i id="rbprog"></i></div>
 </div>
 
 <div id="toast"></div>
@@ -464,7 +664,7 @@ canvas{max-width:100%}
    ===================================================================== */
 
 var WEDDING = new Date(2027, 5, 19);   // 19 junio 2027
-var TOTAL_WEEKS = 43;                   // 40 (M1-M8) + 3 (Fase Boda)
+var TOTAL_WEEKS = 42;                   // M1 de 4 semanas (la enfermedad fue su descarga) + M2-M8 de 5 + 3 de taper
 var KEY = 'mdr_v2';
 
 /* ---------- ESTADO ---------- */
@@ -481,6 +681,9 @@ function defaults(){
     periods: [],      // [ISO]
     photos: {},       // "m1" -> {front:dataURL, side:dataURL, back:dataURL, d:ISO}
     badges: {},       // id -> ISO
+    baseKg: {},
+    measures: [],
+    adj: {},
     pos: {w:1, d:1}
   };
 }
@@ -496,6 +699,9 @@ function load(){
   if(!DB.photos) DB.photos = {};
   if(!DB.badges) DB.badges = {};
   if(!DB.pos) DB.pos = {w:1,d:1};
+  if(!DB.baseKg) DB.baseKg = {};
+  if(!DB.adj) DB.adj = {};
+  if(!DB.measures) DB.measures = [];
 }
 /* save directo — usar SIEMPRE desde peso/fotos/regla */
 function save(){
@@ -533,21 +739,23 @@ function fmtShort(iso){
 var EX = {
   /* Día 1 — Glúteo / Femoral */
   g_hip:      {n:'Hip Thrust (Barra + Banda)', kg:50,  from:1, note:'Banda por encima de las rodillas. Empuje desde el talón.'},
-  g_rana:     {n:'Rana en Multipower',         kg:9,   from:1, note:'Plantas de los pies juntas, rodillas abiertas.'},
-  g_bd:       {n:'Buenos Días Multipower',     kg:9,   from:1, note:'Bisagra de cadera pura, espalda neutra.'},
-  g_rdl:      {n:'Peso Muerto Rumano Mancuernas', kg:11, from:1, note:'Rodilla ligeramente flexionada y FIJA. Baja hasta media espinilla.'},
-  g_bulg:     {n:'Sentadilla Búlgara (torso inclinado)', kg:54, from:1, note:'Torso inclinado = más glúteo, menos rodilla. Pie delantero bien adelantado.'},
-  g_abd:      {n:'Abducción Máquina (pesada)', kg:59,  from:1, note:''},
+  g_rana:     {n:'Rana en Multipower',         kg:7,   from:1, note:'Plantas de los pies juntas, rodillas abiertas.'},
+  g_bd:       {n:'Buenos Días Multipower',     kg:7,   from:1, note:'Bisagra de cadera pura, espalda neutra.'},
+  g_rdl:      {n:'Peso Muerto Rumano Mancuernas', kg:12, from:1, note:'Rodilla ligeramente flexionada y FIJA. Baja hasta media espinilla.'},
+  g_bulg:     {n:'Sentadilla Búlgara (torso inclinado)', kg:10, from:1, note:'Torso inclinado = más glúteo, menos rodilla. Pie delantero bien adelantado.'},
+  g_curlball: {n:'Curl Femoral Deslizante',     kg:0,   from:1, note:'Con toalla en suelo liso, deslizadores o fitball: lo que tengas. Cubre la flexión de rodilla, la función que le faltaba al plan. Sin máquina, sin carga axial y sin nada presionando la rótula.'},
+  g_abd:      {n:'Abducción Máquina (pesada)', kg:61,  from:1, note:''},
   g_sumo:     {n:'Sentadilla Sumo Mancuerna',  kg:15,  from:3, note:'Pies muy abiertos, puntas a 45-60°. Menos tensión rotuliana que la convencional.'},
   g_patada:   {n:'Patada de Glúteo en Polea',  kg:17,  from:4, note:'Pelvis estable, no arquees lumbar para ganar rango.'},
   g_hipuni:   {n:'Hip Thrust Unilateral',      kg:25,  from:5, note:'Pelvis nivelada durante todo el recorrido. Es más exigente de lo que parece.'},
+  g_rdluni:   {n:'Peso Muerto Rumano a Una Pierna', kg:8, from:3, note:'Trabajo de femoral unilateral: corrige descompensaciones y añade estímulo sin cargar la zona lumbar.'},
 
   /* Día 2 — Empujes + Abs */
   p_banca:    {n:'Press Banca Inclinado (MP)', kg:18,  from:1, note:'Codos a 45°, no abiertos del todo.'},
-  p_mil:      {n:'Press Militar Mancuernas',   kg:13,  from:1, note:''},
+  p_mil:      {n:'Press Militar Mancuernas',   kg:14,  from:1, note:''},
   p_lat:      {n:'Elevaciones Laterales',      kg:5,   from:1, note:'Sin impulso. Meñique ligeramente arriba.'},
-  p_face:     {n:'Facepull (movimiento lento)',kg:3,   from:1, note:'Lento de verdad: 3 seg la vuelta.'},
-  p_tri:      {n:'Extensión Tríceps Polea Alta',kg:13, from:1, note:''},
+  p_face:     {n:'Facepull (movimiento lento)',kg:18,  from:1, note:'Lento de verdad: 3 seg la vuelta. Ojo: en la semana 1 lo hiciste a RIR 1 con el objetivo en 3 — es un ejercicio de control, no de carga máxima.'},
+  p_tri:      {n:'Extensión Tríceps con Mancuerna', kg:9, from:1, note:'Con mancuerna sobre la cabeza, a dos manos. Así lo encadenas con las elevaciones laterales sin cambiar de sitio ni depender de la polea.'},
   p_fondos:   {n:'Fondos de Tríceps',          kg:0,   from:2, note:'Peso corporal en dos sillas o paralelas. Rango controlado, sin dolor de hombro.'},
   p_six:      {n:'Sixways',                    kg:2,   from:3, note:'Peso MUY ligero (1-2kg). Seis posiciones de hombro encadenadas.'},
   ab_rueda:   {n:'Rueda Abdominal',            kg:0,   from:1, note:'Lumbar sin arquear. Rango corto al principio.'},
@@ -555,23 +763,25 @@ var EX = {
   ab_colgado: {n:'Elevaciones de Piernas Colgado', kg:0, from:1, note:''},
 
   /* Día 3 — Pierna / Cuádriceps */
-  q_aduc:     {n:'Aductor Máquina (activación)', kg:23, from:1, note:'Calentamiento, no vayas al fallo.'},
-  q_sent:     {n:'Sentadilla Libre',           kg:23,  from:1, note:'PROFUNDIDAD LIBRE DE DOLOR. Si molesta la rótula, para ahí.'},
-  q_ext:      {n:'Extensión Cuádriceps TEMPO 2:3', kg:59, from:1, note:'Sube 2 seg, baja 3 seg. El tempo lento es lo que protege la rótula.'},
-  q_prensa:   {n:'Prensa Inclinada (pies medios)', kg:67, from:1, note:'Rodillas siguen la línea de los pies. No bloquear arriba.'},
+  q_aduc:     {n:'Aductor Máquina (activación)', kg:21, from:1, note:'Calentamiento, no vayas al fallo.'},
+  q_sent:     {n:'Sentadilla Libre',           kg:22,  from:1, note:'PROFUNDIDAD LIBRE DE DOLOR. Si molesta la rótula, para ahí.'},
+  q_ext:      {n:'Extensión Cuádriceps TEMPO 2:3', kg:60, from:1, note:'Sube 2 seg, baja 3 seg. Es el primero de los aislados a propósito: es el ejercicio clave para la rótula y no puede quedar de resto al final.'},
+  q_prensa:   {n:'Prensa Horizontal (pies medios)', kg:72, from:1, note:'Rodillas siguen la línea de los pies. No bloquear arriba. En horizontal la lumbar se despega más fácil: cadera bien metida en el asiento.'},
   q_goblet:   {n:'Sentadilla Goblet Mancuerna',kg:27,  from:1, note:'Mancuerna al pecho, torso vertical.'},
   q_pull:     {n:'Pull Through Polea',         kg:17,  from:1, note:'El impulso viene de la cadera, no de los brazos.'},
   q_cosaca:   {n:'Sentadilla Cosaca',          kg:0,   from:4, note:'Empieza SIN peso. Reduce rango si notas la rodilla.'},
+  q_gemelo:   {n:'Elevación de Talones',       kg:20,  from:1, note:'El sóleo y el gemelo estabilizan la rodilla. No estaban en el plan y hacen falta.'},
 
   /* Día 4 — Tirones + Abs */
   t_jalon:    {n:'Jalón al Pecho (agarre abierto)', kg:18, from:1, note:'Lleva los codos al bolsillo, no tires con el brazo.'},
-  t_gir:      {n:'Remo Gironda',               kg:27,  from:1, note:''},
-  t_lumb:     {n:'Máquina Lumbares',           kg:45,  from:1, note:'Hasta neutro, sin hiperextender.'},
+  t_gir:      {n:'Remo Gironda (agarre estrecho)', kg:27, from:1, note:'Agarre ESTRECHO y neutro, codos pegados al cuerpo. Así es dorsal y grosor. No lo confundas con el seal row, que va con codos abiertos.'},
+  t_lumb:     {n:'Máquina Lumbares',           kg:45,  from:1, note:'Sube hasta neutro y AGUANTA 1 SEGUNDO apretando. Esa pausa es lo que engrosa la columna de erectores, que es la línea que se ve en el escote.'},
   t_pullov:   {n:'Pullover Polea Alta',        kg:9,   from:1, note:'Brazos casi rectos, todo dorsal.'},
-  t_curl:     {n:'Curl Bíceps Polea Baja',     kg:9,   from:1, note:''},
-  t_remouni:  {n:'Remo Unilateral Mancuerna',  kg:11,  from:2, note:'Apoyo en banco, espalda paralela al suelo.'},
+  t_curl:     {n:'Curl Bíceps con Mancuernas',  kg:8,   from:1, note:'Con mancuernas para poder encadenarlo con los pájaros sin soltar el sitio.'},
+  t_remouni:  {n:'Remo Unilateral Mancuerna',  kg:11,  from:1, note:'Apoyo en banco, espalda paralela al suelo. Codos hacia la cadera: es trabajo de dorsal, como el Gironda pero unilateral.'},
   t_stretch:  {n:'Stretchers Polea',           kg:17,  from:3, note:'Brazo recto, buscando el máximo estiramiento del dorsal.'},
-  t_seal:     {n:'Seal Row Mancuernas',        kg:11,  from:4, note:'Tumbada en banco alto: 100% espalda, cero compensación lumbar.'},
+  t_reverse:  {n:'Reverse Fly (Pájaros)',       kg:5,   from:1, note:'Deltoides posterior: es lo que se ve en un escote de espalda y lo que sostiene la postura de hombros atrás.'},
+  t_seal:     {n:'Seal Row Mancuernas (codos abiertos)', kg:11, from:4, note:'Codos ABIERTOS a 60-75°, tirando hacia las axilas. Así trabaja romboides y trapecio medio: la definición entre los omóplatos, que es justo lo que enseña el escote en gota.'},
   ab_crunch:  {n:'Crunch en Polea',            kg:23,  from:1, note:''},
   ab_giros:   {n:'Giros Rusos con Peso',       kg:5,   from:1, note:''},
 
@@ -587,62 +797,74 @@ var EX = {
    ESTRUCTURA DE DÍAS POR MESOCICLO
    fmt: [exId, series, reps, tecnicaAvanzada?]
    ===================================================================== */
+/* =====================================================================
+   PROGRAMACIÓN
+   Principios:
+   - Máximo 7-8 ejercicios por sesión. Más que eso son series basura.
+   - Los ejercicios nuevos SUSTITUYEN, no se suman.
+   - Orden: pesado y prioritario primero, luego coste sistémico descendente.
+   - La activación y el trabajo de manguito viven en el calentamiento.
+   - La progresión viene de carga, series e intensidad. No de meter más cosas.
+   ===================================================================== */
 function dayPlan(day, m){
   var r = [];
   function add(id, s, reps, adv){
-    if(EX[id].from <= m) r.push({id:id, s:s, reps:reps, adv:adv||''});
+    if(EX[id] && EX[id].from <= m) r.push({id:id, s:s, reps:reps, adv:adv||''});
   }
-  if(day===1){
-    add('g_hip',  4, '8-10', m>=4?'rest-pause en la última serie':'');
-    add('g_rana', m>=2?4:3, '13');
-    add('g_bd',   3, '12');
-    add('g_rdl',  3, '10-12');
-    add('g_bulg', 3, '10 / pierna');
-    add('g_sumo', 3, '10');
-    add('g_patada',3,'12 / lado');
-    add('g_hipuni',3,'10 / lado');
-    add('g_abd',  m>=5?4:3, '12', (m===5||m===6)?'dropset en la última serie':'');
+  /* marca el último añadido como primera mitad de una superserie */
+  function ss(arr){ if(arr.length) arr[arr.length-1].ss = true; }
+  var rp = (m>=4) ? 'rest-pause en la última serie' : '';
+  /* M7-M8: bloque de intensificación. Bajan las repeticiones y sube la carga. */
+  var fz = (m>=7);
+  var ds = (m>=5) ? 'dropset en la última serie' : '';
+
+  if(day===1){                                   /* GLÚTEO / FEMORAL */
+    add('g_hip',   m>=8?5:4, fz?'6-8':'8-10', rp);  /* extensión pesada */
+    add('g_rdl',   4, fz?'8-10':'10-12');        /* motor del femoral */
+    add('g_bulg',  m>=3?4:3, '10 / pierna');     /* unilateral: cubre el control del valgo */
+    add('g_rana',  m>=2?4:3, '13');      /* superserie con la abducción */
+    add('g_abd',   m>=4?5:4, '12', ds);
   }
-  if(day===2){
-    add('p_banca',3,'8-10',(m===5||m===6)?'rest-pause en la última serie':'');
-    add('p_mil',  3,'10-12');
-    add('p_lat',  4,'12-15', m>=4?'dropset en la última serie':'');
-    add('p_face', 3,'12');
-    add('p_tri',  3,'12');
-    add('p_fondos',3,'máximas');
-    add('p_six',  3,'10');
-    add('ab_rueda',3,'10-12');
+  if(day===2){                                   /* EMPUJES + ABS */
+    add('p_banca', m>=6?4:3, fz?'6-8':'8-10', m>=6?rp:'');
+    add('p_mil',   3, '10-12');
+    add('p_fondos',3, 'máximas');                /* M2+ */
+    add('p_lat',   4, '12-15', ds);  ss(r);      /* superserie: ambos con mancuernas, mismo sitio */
+    add('p_tri',   3, '12');
+    add('p_face',  3, '12');             /* superserie con abdomen */
+    add('ab_colgado',3,'10-12');
     add('ab_pallof',3,'12 / lado');
-    add('ab_colgado',3,'10');
   }
-  if(day===3){
-    add('q_aduc', 2,'15');
-    add('q_sent', 3,'10-8-6');
-    add('q_ext',  3,'15',(m===5||m===6)?'dropset en la última serie':'');
-    add('q_prensa',3,'12');
-    add('q_goblet',2,'12');
-    add('g_sumo', 2,'12');
-    add('q_cosaca',2,'8 / lado');
-    add('q_pull', 3,'12');
-  }
-  if(day===4){
-    add('t_jalon',4,'10-12', m>=4?'rest-pause en la última serie':'');
-    add('t_gir',  3,'10');
-    add('t_lumb', 3,'12');
-    add('t_pullov',3,'15');
-    add('t_curl', 3,'12');
-    add('t_remouni',3,'10 / lado');
-    add('t_stretch',3,'12');
-    add('t_seal', 3,'10',(m===5||m===6)?'dropset en la última serie':'');
+  if(day===3){                                   /* PIERNA */
+    add('q_sent',  3, fz?'8-6-4':'10-8-6');
+    add('q_prensa',m>=8?5:(m>=3?4:3), '12');
+    add('g_bd',    m>=4?4:3, '12');              /* femoral: extensión de cadera */
+    add('g_curlball',m>=6?4:3, '12');            /* femoral: flexión de rodilla, la otra función */
+    add('q_ext',   3, '15', ds);         /* superserie con abducción */
+    add('g_abd',   2, '15');
     add('ab_crunch',3,'12');
-    add('ab_giros',3,'15');
   }
-  if(day===5){
-    add('b_remo',3,'8');
-    add('b_seal',3,'13');
-    add('b_patada',2,'12');
-    add('b_rdldef',3,'10');
-    add('b_pull',2,'12');
+  if(day===4){                                   /* TIRONES + ABS */
+    /* Prioridad: lo que enseña el escote en gota (erectores e interescapular).
+       La anchura dorsal se mantiene, no se persigue.                        */
+    add('t_jalon', 3, fz?'8-10':'10-12', rp);    /* dorsal: mantenimiento */
+    add('t_gir',   3, '10');                     /* grosor de espalda media */
+    if(m < 4) add('t_remouni', 3, '10 / lado');
+    add('t_seal',  m>=4?4:3, '10', ds);          /* M4+: interescapular, lo que MÁS se ve */
+    add('t_lumb',  m>=4?4:3, '12');              /* erectores: la columna del escote */
+    add('t_reverse',3,'15');         ss(r);      /* deltoides posterior: postura */
+    add('t_curl',  3, '12');
+  }
+
+  if(day===5){                                   /* BONUS opcional — va justo ANTES del Día 1 */
+    /* Refuerza cuádriceps, glúteo medio y erectores SIN tocar glúteo mayor
+       pesado ni femoral: el Día 1 necesita hip thrust y RDL en fresco.     */
+    add('q_goblet',3, '12');                     /* cuádriceps, torso vertical, poca carga axial */
+    add('g_rdluni',3, '10 / pierna');            /* femoral unilateral: aquí sí aporta, no compite con el Día 1 */
+    add('q_ext',   3, '15');             /* superserie con abducción */
+    add('g_abd',   3, '15');
+    add('t_lumb',  3, '15');             /* superserie con pájaros */
+    add('t_reverse',3,'15');
   }
   return r;
 }
@@ -653,11 +875,11 @@ var CARDIO_TYPES = [
 ];
 /* ---------- CARDIO POR DÍA ---------- */
 var CARDIO = {
-  1:{n:'Caminata inclinada', min:20, note:'Inclinación alta, velocidad cómoda. Cero impacto para la rodilla.'},
+  1:{n:'Caminata inclinada', min:15, note:'Inclinación alta, velocidad cómoda. Cero impacto para la rodilla.'},
   2:{n:'Elíptica',           min:15, note:'Ritmo constante, puedes mantener conversación.'},
   3:{n:'Bici estática',      min:15, note:'Después de pierna: ayuda a drenar y no castiga la rótula.'},
-  4:{n:'Power walking',      min:20, note:'Paso vivo, brazos activos.'},
-  5:{n:'Cardio libre',       min:15, note:'El que te apetezca.'}
+  4:{n:'Power walking',      min:15, note:'Paso vivo, brazos activos.'},
+  5:{n:'Cardio libre',       min:15, note:'Suave: mañana toca el Día 1 y conviene llegar entera.'}
 };
 
 /* =====================================================================
@@ -692,6 +914,12 @@ var TECH = {
             e:'Pelvis NIVELADA durante todo el recorrido: la cadera de la pierna en el aire no debe caer. Sube, aprieta, baja controlada.',
             x:'Dejar caer un lado de la pelvis. Meter peso antes de dominar la nivelación.'},
 
+  g_rdluni:{s:'De pie sobre una pierna, mancuerna en la mano contraria a la pierna de apoyo. Rodilla de apoyo ligeramente flexionada y fija.',
+            e:'Bisagra de cadera: baja el torso mientras la pierna libre sube hacia atrás formando una línea con la espalda. Baja hasta notar el femoral. Sube apretando el glúteo. Apóyate en una pared con la otra mano si pierdes el equilibrio.',
+            x:'Rotar la cadera hacia fuera al bajar (la pelvis debe quedarse mirando al suelo). Redondear la espalda buscando más rango.'},
+  q_gemelo:{s:'De pie, en máquina o con mancuernas, puntas de los pies sobre un escalón o disco.',
+            e:'Sube todo lo que puedas apoyándote en la punta, aprieta arriba 1 seg, baja despacio hasta notar el estiramiento. Rango completo.',
+            x:'Rebotar. Rango corto. Ir rápido: el gemelo necesita tensión mantenida.'},
   p_banca:{s:'Banco inclinado 30-45°, barra a la altura de la clavícula alta. Agarre algo más ancho que hombros. Omóplatos retraídos y hundidos.',
            e:'Baja hasta rozar la parte alta del pecho con los codos a unos 45° del cuerpo. Empuja sin bloquear del todo arriba.',
            x:'Codos completamente abiertos a 90°. Rebotar en el pecho. Despegar los omóplatos.'},
@@ -704,9 +932,9 @@ var TECH = {
   p_face:{s:'Polea a la altura de la cara, cuerda con agarre neutro, un pie algo adelantado.',
           e:'Tira llevando la cuerda hacia la frente, separando las manos y rotando los hombros hacia fuera. Aprieta 1 seg. LA VUELTA EN 3 SEGUNDOS.',
           x:'Hacerlo rápido (pierde todo el sentido). Tirar con los bíceps en vez de con la espalda alta.'},
-  p_tri:{s:'De pie frente a la polea alta, barra o cuerda, codos pegados al costado.',
-         e:'Extiende solo desde el codo, el brazo no se mueve. Aprieta abajo, sube controlada.',
-         x:'Separar los codos del cuerpo. Ayudarse con el torso.'},
+  p_tri:{s:'De pie o sentada, una mancuerna sujeta con las dos manos por detrás de la cabeza, codos apuntando arriba y pegados a las orejas.',
+         e:'Extiende los codos llevando la mancuerna hacia el techo sin que los brazos se separen. Baja controlada hasta notar el estiramiento del tríceps. La posición por encima de la cabeza estira más el tríceps que la polea, que es donde más crece.',
+         x:'Abrir los codos hacia los lados. Arquear la lumbar para ayudarse. Bajar más allá de donde controlas.'},
   p_fondos:{s:'Manos en dos superficies estables a la misma altura (sillas o paralelas), cuerpo entre ellas, hombros abajo.',
             e:'Baja hasta que el brazo forme unos 90° — NO MÁS. Sube extendiendo los codos. Torso vertical para cargar tríceps.',
             x:'Bajar demasiado (castiga el hombro). Encoger los hombros hacia las orejas.'},
@@ -729,10 +957,13 @@ var TECH = {
   q_sent:{s:'Barra en la espalda alta, pies a anchura de hombros o algo más, puntas ligeramente hacia fuera. Core apretado.',
           e:'Baja mandando la cadera atrás y abajo, rodillas siguiendo la línea de las puntas. PROFUNDIDAD LIBRE DE DOLOR: si la rótula molesta, ese es tu tope. Sube empujando con todo el pie.',
           x:'Rodillas hacia dentro. Talones despegados. Buscar profundidad a costa de dolor.'},
+  g_curlball:{s:'Tumbada boca arriba en la colchoneta, brazos a los lados. Los talones apoyados sobre una toalla doblada en suelo liso, sobre deslizadores, o sobre un fitball si lo hay. Con toalla funciona igual de bien: es la opción que no depende de nada.',
+            e:'Levanta la cadera hasta formar una línea recta de hombros a rodillas y MANTENLA arriba todo el recorrido. Desde ahí flexiona las rodillas arrastrando los talones hacia el glúteo. Vuelve estirando en 3 segundos sin dejar caer la cadera. Empieza con las dos piernas.',
+            x:'Dejar caer la cadera al estirar: ahí se pierde el ejercicio entero. Ir rápido. Pasar a una pierna antes de controlar el puente con dos.'},
   q_ext:{s:'Sentada, espalda apoyada, eje de la máquina alineado con la rodilla, almohadilla sobre el tobillo.',
          e:'SUBE EN 2 SEGUNDOS, aprieta arriba, BAJA EN 3 SEGUNDOS. El tempo lento es exactamente lo que fortalece el cuádriceps sin castigar la rótula.',
          x:'Ir rápido o soltar el peso en la bajada (lo peor para la condromalacia). Rango completo si duele: acorta el recorrido.'},
-  q_prensa:{s:'Espalda y lumbar completamente pegadas al respaldo. Pies a media altura de la plataforma, anchura de caderas.',
+  q_prensa:{s:'Espalda y lumbar completamente pegadas al respaldo, cadera bien metida en el asiento. Pies a media altura de la plataforma, anchura de caderas.',
             e:'Baja hasta unos 90° de rodilla o hasta antes si molesta. Rodillas alineadas con las puntas. Sube sin bloquear del todo arriba.',
             x:'Despegar la lumbar abajo (muy lesivo). Bloquear las rodillas arriba. Pies demasiado bajos (carga la rótula).'},
   q_goblet:{s:'Mancuerna sujeta verticalmente contra el pecho, codos dentro, pies a anchura de hombros.',
@@ -748,17 +979,17 @@ var TECH = {
   t_jalon:{s:'Sentada, muslos fijados bajo las almohadillas, agarre más ancho que los hombros, pecho arriba.',
            e:'Tira llevando los CODOS hacia los bolsillos, no tirando con las manos. Barra a la clavícula. Sube controlada dejando estirar el dorsal.',
            x:'Echar mucho el torso atrás. Tirar con los bíceps. Bajar la barra tras la nuca.'},
-  t_gir:{s:'Sentada frente a la polea, agarre ancho, pecho arriba, ligera inclinación del torso.',
-         e:'Tira hacia la parte alta del abdomen juntando los omóplatos. Aprieta 1 seg atrás. Vuelve despacio.',
-         x:'Balancear el torso. Encoger los hombros.'},
-  t_lumb:{s:'Ajusta la máquina para que la cadera quede libre en el borde, pies fijos.',
-          e:'Baja con la espalda recta y sube HASTA NEUTRO, ni un grado más. Movimiento controlado en ambos sentidos.',
-          x:'Hiperextender arriba (comprime la lumbar). Rebotar abajo.'},
+  t_gir:{s:'Sentada frente a la polea con agarre ESTRECHO en V (manos juntas, palmas enfrentadas), pecho arriba, torso casi vertical.',
+         e:'Tira llevando el mango a la parte baja del esternón con los CODOS PEGADOS al costado. La trayectoria pegada al cuerpo hace que trabaje el dorsal en grosor. Aprieta 1 seg y vuelve despacio dejando estirar.',
+         x:'Abrir los codos (eso sería el trabajo del seal row, no este). Balancear el torso hacia atrás. Encoger los hombros.'},
+  t_lumb:{s:'Ajusta la máquina para que la cadera quede libre justo en el borde del apoyo, pies bien fijos. Brazos cruzados al pecho, o con un disco contra el pecho cuando el peso corporal se te quede corto.',
+          e:'Baja con la espalda recta hasta notar el estiramiento, sube HASTA NEUTRO y aguanta 1 segundo apretando glúteo y lumbar. Ni un grado más allá de neutro. Baja en 3 segundos.',
+          x:'Hiperextender arriba: comprime las vértebras y no añade nada al desarrollo. Rebotar abajo. Ir rápido: aquí la pausa es el ejercicio.'},
   t_pullov:{s:'De pie frente a la polea alta, barra recta, brazos casi extendidos, ligera inclinación del torso.',
             e:'Baja la barra hasta los muslos manteniendo los BRAZOS CASI RECTOS. Todo el movimiento sale del dorsal. Vuelve controlada.',
             x:'Flexionar los codos (se convierte en extensión de tríceps).'},
-  t_curl:{s:'De pie frente a la polea baja, codos pegados al costado.',
-          e:'Flexiona solo desde el codo, sin mover el hombro. Aprieta arriba, baja en 2-3 seg.',
+  t_curl:{s:'De pie con una mancuerna en cada mano, codos pegados al costado.',
+          e:'Flexiona solo desde el codo, sin mover el hombro. Aprieta arriba, baja en 2-3 seg. Puedes hacerlo justo después de los pájaros sin moverte del sitio.',
           x:'Balancear el cuerpo. Adelantar los codos.'},
   t_remouni:{s:'Una rodilla y una mano apoyadas en el banco, espalda paralela al suelo y neutra. Mancuerna colgando.',
              e:'Tira llevando el codo hacia la cadera, pegado al cuerpo. Aprieta el omóplato arriba. Baja estirando del todo.',
@@ -766,9 +997,12 @@ var TECH = {
   t_stretch:{s:'De pie frente a la polea alta, un brazo, agarre individual, brazo RECTO.',
              e:'Con el brazo estirado, baja buscando el máximo estiramiento del dorsal en la posición alta. Movimiento amplio y lento.',
              x:'Doblar el codo. Ir rápido: aquí interesa el estiramiento.'},
-  t_seal:{s:'Tumbada boca abajo en un banco alto, mancuernas colgando, pecho apoyado.',
-          e:'Tira llevando los codos hacia atrás y arriba, juntando omóplatos. Como el pecho está apoyado, NO puedes compensar con lumbar: es 100 % espalda.',
-          x:'Despegar el pecho del banco. Usar impulso.'},
+  t_reverse:{s:'De pie con el torso inclinado hacia delante desde la cadera (espalda recta), o sentada en el borde de un banco con el pecho sobre los muslos. Mancuernas ligeras colgando, palmas mirándose.',
+            e:'Abre los brazos en arco hacia los lados hasta la altura de los hombros, con una flexión ligera y fija de codo. Piensa en separar las manos, no en subirlas. Aprieta 1 seg arriba y baja en 3 seg.',
+            x:'Usar demasiado peso y tirar con la espalda alta en vez del hombro. Balancear el torso. Encoger los trapecios hacia las orejas.'},
+  t_seal:{s:'Tumbada boca abajo en un banco alto, pecho apoyado, mancuernas colgando bajo los hombros.',
+          e:'Tira con los CODOS ABIERTOS a unos 60-75° del cuerpo, llevándolos hacia el techo y juntando los omóplatos al final. Aguanta 1 seg arriba. Con el pecho apoyado no puedes compensar con lumbar ni con piernas: todo el trabajo va a romboides y trapecio medio.',
+          x:'Pegar los codos al cuerpo (eso duplica el remo Gironda y pierdes el objetivo). Despegar el pecho del banco. Usar impulso.'},
   ab_crunch:{s:'De rodillas frente a la polea alta, cuerda a los lados de la cabeza, cadera fija.',
              e:'Flexiona la COLUMNA llevando las costillas hacia la pelvis, no la cadera. Aprieta abajo, vuelve controlada.',
              x:'Hacer una bisagra de cadera en vez de flexionar el tronco. Tirar con los brazos.'},
@@ -804,11 +1038,14 @@ var RIR_RULE = {
   /* estabilidad / equilibrio: el fallo arruina la técnica */
   g_bulg:   {min:1, why:'Unilateral con equilibrio: a RIR 0 se pierde la postura.'},
   g_hipuni: {min:1, why:'Necesitas la pelvis nivelada; a RIR 0 se desnivela.'},
+  g_rdluni: {min:1, why:'Unilateral con equilibrio: a RIR 0 se pierde el control de la cadera.'},
+  g_curlball:{min:1, why:'Para cuando no puedas mantener la cadera arriba: ahí el ejercicio deja de servir.'},
   /* manguito rotador y trabajo ligero */
   p_six:    {min:3, why:'Trabajo de manguito rotador: control, nunca intensidad.'},
   p_face:   {min:2, why:'Prioriza el tempo lento sobre la carga.'},
   /* lumbar: sin fallo */
   t_lumb:   {min:2, why:'Zona lumbar: no se entrena al fallo.'},
+  t_reverse:{min:2, why:'Deltoides posterior: es músculo pequeño, prioriza el control sobre la carga.'},
   /* abdominales: por sensación */
   ab_rueda:   {min:1, why:'Para cuando no puedas mantener la lumbar neutra.'},
   ab_pallof:  {min:2, why:'Es antirrotación: la calidad manda.'},
@@ -824,6 +1061,94 @@ function rirFor(exId, wi){
   return {rir:val, why:why, adjusted:(val !== base)};
 }
 
+/* =====================================================================
+   DESCANSO ENTRE SERIES (segundos)
+   ===================================================================== */
+var REST = {
+  /* --- DÍA 1: GLÚTEO / FEMORAL --- */
+  g_hip:    180,  /* barra pesada 8-10 reps, cadena posterior completa: el que más descanso pide */
+  g_rdl:    120,  /* 5 series de femoral con mancuernas; limita el agarre y la lumbar, no el pulmón */
+  g_bulg:   120,  /* unilateral: mientras trabaja una pierna la otra descansa, no hacen falta 150 */
+  g_rdluni:  90,  /* unilateral ligero, demanda de control más que de carga */
+  g_rana:    90,  /* va en superserie con la abducción: este es el descanso TRAS la pareja */
+  g_abd:     60,  /* alta repetición, músculo pequeño y muy tolerante */
+
+  /* --- DÍA 2: EMPUJES + ABS --- */
+  p_banca:  150,  /* compuesto pesado 8-10 reps */
+  p_mil:    120,  /* press vertical: exige core y estabilidad de hombro, 90 se queda corto */
+  p_fondos: 120,  /* series a máximas repeticiones: el fallo pide más recuperación */
+  p_lat:     50,  /* aislamiento de hombro, alta repetición */
+  p_tri:     45,
+  p_face:    45,
+  ab_colgado:45,
+  ab_pallof: 45,  /* isométrico antirrotación, no genera fatiga metabólica */
+
+  /* --- DÍA 3: PIERNA --- */
+  q_sent:   180,  /* esquema 10-8-6: la última serie es la más pesada del día */
+  q_prensa: 120,  /* 12 reps con espalda apoyada: no hay demanda axial que recuperar */
+  g_bd:     120,  /* bisagra con barra en la espalda: los erectores necesitan margen */
+  q_ext:     90,  /* tempo 2:3 = 75 seg de tensión por serie; 60 no basta */
+  q_goblet:  90,
+  ab_crunch: 45,
+
+  /* --- DÍA 4: TIRONES + ABS --- */
+  t_jalon:  120,  /* dorsal en 10-12 reps: no es un patrón que agote el sistema */
+  t_gir:    120,  /* remo pesado, mismo criterio */
+  t_remouni: 90,  /* unilateral */
+  t_seal:    90,  /* pecho apoyado: sin componente lumbar que recuperar */
+  t_lumb:    90,  /* con pausa arriba, la serie dura más de lo que parece */
+  t_pullov:  50,
+  t_reverse: 50,  /* deltoides posterior: pequeño y de recuperación rápida */
+  t_curl:    50,
+
+  /* --- BONUS / OTROS --- */
+  g_sumo:   120, g_patada: 60, g_hipuni: 120, q_pull: 90, q_gemelo: 60,
+  q_aduc:    45, p_six: 45, ab_rueda: 60, t_stretch: 60, ab_giros: 60,
+  b_remo:   120, b_seal: 90, b_patada: 60, b_rdldef: 120, b_pull: 90
+};
+function restFor(exId){ return REST[exId] || 90; }
+function fmtSec(s){
+  var m = Math.floor(s/60), r = s%60;
+  return m+':'+(r<10?'0':'')+r;
+}
+
+/* =====================================================================
+   ALTERNATIVAS — si la máquina está ocupada o el material no está libre
+   Cada alternativa mantiene la MISMA función, no es un ejercicio cualquiera.
+   ===================================================================== */
+var ALT = {
+  g_hip:    'Hip thrust en Multipower · Puente de glúteo con barra en el suelo · Hip thrust con mancuerna en la cadera',
+  g_rdl:    'RDL con barra · Buenos días en Multipower · Peso muerto piernas rígidas',
+  g_bulg:   'Zancada estática apoyada en banco · Step-up a banco alto · Sentadilla a una pierna asistida',
+  g_rdluni: 'RDL unilateral con kettlebell · Buenos días a una pierna sin peso · Peso muerto a una pierna con apoyo de dedos',
+  g_rana:   'Rana con mancuerna en la cadera en el suelo · Puente de glúteo con plantas juntas y banda',
+  g_curlball:'Curl femoral con banda elástica, tumbada boca abajo y la banda anclada al tobillo · Curl nórdico asistido con banda, si buscas más dificultad · Curl femoral de pie en máquina, que apoya menos la rótula que el sentado',
+  g_abd:    'Abducción de pie en polea baja · Monster walk con banda (más series) · Abducción tumbada de lado con lastre',
+  g_sumo:   'Sentadilla sumo con kettlebell · Sentadilla sumo en Multipower · Prensa con pies altos y anchos',
+  p_banca:  'Press inclinado con mancuernas · Press plano en Multipower · Flexiones con pies elevados',
+  p_mil:    'Press militar en Multipower · Press Arnold · Press militar en máquina',
+  p_lat:    'Elevaciones laterales en polea · Elevaciones laterales en máquina · Elevación lateral tumbada de lado',
+  p_tri:    'Extensión en polea alta · Press francés con barra Z · Patada de tríceps con mancuerna',
+  p_fondos: 'Fondos en máquina asistida · Fondos entre dos bancos · Press cerrado en Multipower',
+  p_face:   'Facepull con banda elástica · Reverse fly con mancuernas · Pájaros en máquina',
+  q_sent:   'Sentadilla en Multipower · Sentadilla goblet · Hack squat',
+  q_prensa: 'Prensa inclinada si la hubiera · Hack squat · Sentadilla goblet a banco (más series)',
+  q_pull:   'Pull through con banda elástica · Kettlebell swing controlado · Buenos días con banda',
+  q_ext:    'Extensión de rodilla a una pierna en la misma máquina · Sentadilla isométrica en pared con tempo · Extensión terminal con banda',
+  q_gemelo: 'Elevación de talones en prensa · Elevación de talones a una pierna con mancuerna · Elevación en escalón sin peso',
+  t_jalon:  'Dominadas asistidas · Jalón con agarre neutro · Pullover en polea (más series)',
+  t_gir:    'Remo en máquina · Remo con barra a 45° · Remo en polea baja con agarre ancho',
+  t_remouni:'Remo en polea a una mano · Remo con kettlebell · Remo en banco inclinado',
+  t_seal:   'Remo tumbada en banco inclinado · Remo con barra tumbada · Remo en máquina con pecho apoyado',
+  t_reverse:'Pájaros en máquina (peck deck invertido) · Reverse fly en polea cruzada · Pájaros tumbada boca abajo en banco inclinado',
+  t_pullov: 'Pullover con mancuerna tumbada · Pullover en máquina · Stretchers en polea',
+  t_lumb:   'Hiperextensiones en banco romano · Superman en colchoneta · Buenos días ligeros',
+  t_curl:   'Curl en polea baja · Curl martillo · Curl en banco inclinado',
+  ab_colgado:'Elevación de piernas en paralelas · Elevación de piernas tumbada · Dead bug con carga',
+  ab_pallof:'Pallof con banda elástica · Plancha lateral con peso · Antirrotación de rodillas',
+  ab_crunch:'Crunch en colchoneta con peso en el pecho · Crunch en máquina · Encogimientos en banco declinado'
+};
+
 var DAYNAMES = {
   1:'Glúteo / Femoral',
   2:'Empujes + Abs',
@@ -831,52 +1156,100 @@ var DAYNAMES = {
   4:'Tirones + Abs',
   5:'Bonus: Glúteo / Torso'
 };
-var DAYMIN = {1:90, 2:65, 3:75, 4:65, 5:45};
+/* duración estimada real: calentamiento + series + descansos + cardio + vuelta a la calma */
+function liftMinutes(day, wi){
+  var plan = dayPlan(day, wi.meso), i, seg = 0, s;
+  for(i=0;i<plan.length;i++){
+    s = seriesFor(plan[i].s, wi);
+    seg += s * 40;
+    seg += (s-1) * (plan[i].ss ? 20 : restFor(plan[i].id));
+    seg += 45;
+  }
+  seg += 8*60;
+  return Math.round(seg/60/5)*5;
+}
+function dayMinutes(day, wi){
+  var plan = dayPlan(day, wi.meso), i, seg = 0, s;
+  for(i=0;i<plan.length;i++){
+    s = seriesFor(plan[i].s, wi);
+    seg += s * 40;                    /* ejecución */
+    seg += (s-1) * (plan[i].ss ? 20 : restFor(plan[i].id));   /* superserie: sin descanso entre pares */
+    seg += 45;                        /* transición al siguiente ejercicio */
+  }
+  seg += 8*60;                        /* calentamiento */
+  seg += (CARDIO[day] ? CARDIO[day].min*60 : 0);
+  seg += 3*60;                        /* vuelta a la calma */
+  return Math.round(seg/60/5)*5;      /* redondeo a 5 min */
+}
 
 /* ---------- CALENTAMIENTO RAMP ---------- */
 var WARM = {
-  1:[['Elevar pulso · 3-5 min','Bici o elíptica suave, ritmo cómodo.'],
-     ['Movilidad','90/90 de cadera 8 por lado · círculos de cadera 10 · cat-cow 8.'],
-     ['Activación','Monster walk con banda 10 pasos x2 · glute bridge 2x15 · clamshell 10 por lado.'],
-     ['Aproximación','2 series de Hip Thrust con carga creciente (vacío → 50% → 80%).']],
-  2:[['Elevar pulso · 3-5 min','Elíptica o remo suave.'],
-     ['Movilidad','Círculos de hombro 10 · dislocados con banda 10 · rotación torácica 8 por lado.'],
-     ['Activación','Band pull-apart 15 · rotación externa con banda 12 por lado · scapular push-up 10.'],
+  1:[['Elevar pulso · 4 min','Bici, elíptica o cinta, el que esté libre. Ritmo cómodo.'],
+     ['Cadera y glúteo · 3 min','90/90 de cadera 6 por lado · monster walk con banda 10 pasos x2 direcciones (sin banda: glute bridge 15).'],
+     ['Aproximación','2 series de Hip Thrust con carga creciente (vacío → 60% → 80%). En el RDL y la búlgara, haz la primera serie con menos peso a modo de tanteo.']],
+  2:[['Elevar pulso · 4 min','Elíptica, remo o cinta.'],
+     ['Hombro · 3 min','Círculos de brazo 10 · band pull-apart 15 · rotación externa con banda 10 por lado.'],
      ['Aproximación','2 series del primer press con carga creciente.']],
-  3:[['Elevar pulso · 5 min','Bici estática, resistencia baja-media, cadencia alta. Lubrica la rodilla antes de cargar. Mueve los tobillos en círculos mientras pedaleas.'],
-     ['Activación rotuliana (VMO)','Extensión de rodilla terminal (últimos 30°, sin peso o banda ligera) 1x15. Activa el vasto medial, que es quien estabiliza la rótula.'],
-     ['Aproximación','2 series de sentadilla con carga creciente (vacío → 50% → 75%). Si hay molestia en cualquiera, reduce profundidad. No fuerces la serie efectiva.']],
-  4:[['Elevar pulso · 3-5 min','Power walking o remo suave.'],
-     ['Movilidad','Círculos de brazo · rotación torácica 8 por lado · movilidad escapular.'],
-     ['Activación','Band pull-apart 15 · face pull con banda 12 · remo con banda ligera 12.'],
-     ['Aproximación','2 series del jalón o remo principal con carga creciente.']],
-  5:[['Elevar pulso · 3-5 min','Cardio ligero a elección.'],
-     ['Movilidad','Cadera + escápulas, versión breve.'],
-     ['Activación','Glute bridge o banda de glúteo 2x12-15.'],
-     ['Aproximación','1-2 series con carga creciente en el primer ejercicio.']]
+  3:[['Elevar pulso · 5 min','Bici estática preferentemente: el pedaleo lubrica la rodilla sin impacto. Si está ocupada, elíptica o cinta en llano.'],
+     ['Tobillo y rótula · 3 min','Rodilla a la pared 8 por lado (sin despegar el talón) · extensión de rodilla terminal 1x15 con banda o sin peso, para activar el vasto medial.'],
+     ['Aproximación','2 series de sentadilla con carga creciente (vacío → 50% → 75%). Si molesta en alguna, reduce profundidad. Antes de la prensa, 1 serie ligera.']],
+  4:[['Elevar pulso · 4 min','Remo, cinta o elíptica.'],
+     ['Escápulas · 3 min','Band pull-apart 15 · rotación torácica 8 por lado · remo con banda ligera 12.'],
+     ['Aproximación','2 series del jalón o del remo principal con carga creciente.']],
+  5:[['Elevar pulso · 4 min','Bici o elíptica suave.'],
+     ['Rodilla · 2 min','Rodilla a la pared 8 por lado · extensión terminal 1x15.'],
+     ['Aproximación','1 serie ligera de sentadilla goblet.']]
 };
+
+
+/* ---------- VUELTA A LA CALMA ---------- */
+var COOL = {
+  1:'Isquiotibiales tumbada con banda 30 seg por pierna · figura-4 de glúteo 30 seg por lado · postura del niño 40 seg.',
+  2:'Pectoral en marco de puerta 30 seg por lado · tríceps sobre la cabeza 30 seg por lado · cuello suave.',
+  3:'Cuádriceps de pie 30 seg por lado (sin forzar la rodilla) · gemelo contra la pared 30 seg por lado · aductores sentada 40 seg.',
+  4:'Dorsal agarrada a un poste 30 seg por lado · pectoral 30 seg · gato-camello 8 reps.',
+  5:'Cuádriceps de pie 30 seg por lado · gato-camello 8 reps · respiración lenta 2 min. Mañana toca Día 1: prioriza soltar la lumbar.'
+};
+
 
 /* =====================================================================
    LÓGICA DE SEMANAS / MESOCICLOS
    ===================================================================== */
+/* M1: semanas 1-4 (sin descarga: la semana de enfermedad hizo esa función)
+   M2-M8: 5 semanas cada uno (4 de trabajo + descarga), semanas 5-39
+   Fase Boda: semanas 40-42                                            */
 function weekInfo(w){
-  if(w > 40){
-    var tw = w - 40; // 1..3
+  if(w >= 40){
+    var tw = w - 39; // 1..3
     return {
       meso: 9, name:'Fase Boda', wim: tw, deload:false, taper:true,
       rir: 2, volPct: 0.6,
       label:'Fase Boda · semana '+tw+' de 3'
     };
   }
-  var m = Math.ceil(w/5);
-  var wim = ((w-1) % 5) + 1;
+  if(w <= 4){
+    return {
+      meso: 1, name:'Mesociclo 1', wim: w, deload:false, taper:false,
+      rir: 4 - w,                     // 3, 2, 1, 0
+      volPct: 1,
+      label:'Mesociclo 1 · semana '+w+' de 4'
+    };
+  }
+  var m = Math.ceil((w-4)/5) + 1;
+  var wim = ((w-5) % 5) + 1;
   var deload = (wim === 5);
   return {
     meso: m, name:'Mesociclo '+m, wim: wim, deload: deload, taper:false,
-    rir: deload ? 3 : (4 - wim),      // 3,2,1,0
+    rir: deload ? 3 : (4 - wim),
     volPct: deload ? 0.65 : 1,
     label:'Mesociclo '+m+' · '+(deload ? 'descarga' : 'semana '+wim+' de 4')
   };
+}
+/* semana en la que termina cada mesociclo (para fotos e hitos) */
+function mesoRange(i){
+  if(i === 1) return {from:1, to:4};
+  if(i === 9) return {from:40, to:42};
+  return {from:5+(i-2)*5, to:9+(i-2)*5};
 }
 function seriesFor(base, wi){
   if(wi.taper) return Math.max(2, Math.round(base * 0.6));
@@ -884,11 +1257,103 @@ function seriesFor(base, wi){
   return base;
 }
 /* Progresión de carga sugerida: +2.5% por semana de trabajo acumulada */
-/* devuelve {kg:n, from:'hist'|'base'} */
+/* Última sesión registrada de un ejercicio: peso y RIR medio */
+function lastPerformance(exId, beforeWeek){
+  var w, d, k, lg, rec, i, kg, rirs, best;
+  for(w = beforeWeek-1; w >= 1; w--){
+    for(d = 5; d >= 1; d--){
+      k = w+'-'+d; lg = DB.log[k];
+      if(!lg || !lg.ex || !lg.ex[exId]) continue;
+      rec = lg.ex[exId];
+      best = null; rirs = [];
+      for(i=0;i<rec.s.length;i++){
+        if(rec.s[i] && rec.s[i].kg){
+          kg = parseFloat(normNum(rec.s[i].kg));
+          if(!isNaN(kg) && (best===null || kg>best)) best = kg;
+        }
+        if(rec.s[i] && rec.s[i].rir!==undefined && rec.s[i].rir!==null) rirs.push(rec.s[i].rir);
+      }
+      if(best === null) continue;
+      var avg = null, sum = 0, j;
+      if(rirs.length){ for(j=0;j<rirs.length;j++) sum += rirs[j]; avg = sum/rirs.length; }
+      /* repeticiones de la serie más pesada y nº de series con datos */
+      var reps = null, nser = 0;
+      for(j=0;j<rec.s.length;j++){
+        if(rec.s[j] && rec.s[j].kg){
+          nser++;
+          if(parseFloat(normNum(rec.s[j].kg)) === best && rec.s[j].reps) reps = rec.s[j].reps;
+        }
+      }
+      return {kg:best, rir:avg, w:w, reps:reps, nser:nser};
+    }
+  }
+  return null;
+}
+/* Incremento mínimo real según el material del gimnasio.
+   Mancuernas suben de 1 en 1; barra, multipower y máquinas de 2,5 en 2,5. */
+var STEP = {
+  g_hip:2.5, g_rdl:1, g_bulg:1, g_rdluni:1, g_rana:2.5, g_abd:2.5, g_sumo:2,
+  p_banca:2.5, p_mil:1, p_lat:1, p_tri:1, p_face:2.5, p_fondos:1,
+  q_sent:2.5, q_prensa:2.5, g_bd:2.5, q_ext:2.5, q_goblet:2, q_gemelo:2.5, q_aduc:2.5,
+  t_jalon:2.5, t_gir:2.5, t_remouni:1, t_seal:1, t_lumb:2.5, t_pullov:2.5,
+  t_reverse:1, t_curl:1, ab_crunch:2.5, ab_giros:1,
+  b_remo:1, b_seal:1, b_rdldef:1
+};
+function stepFor(exId){ return STEP[exId] || 2.5; }
+/* Propuesta de carga para esta semana, autorregulada por el RIR anterior */
 function suggestKgInfo(exId, w){
-  var last = lastLoggedKg(exId, w);
-  if(last !== null) return {kg:last, from:'hist'};
-  return {kg:suggestKg(exId, w), from:'base'};
+  var p = lastPerformance(exId, w);
+  if(p === null) return {kg:suggestKg(exId, w), from:'base', why:''};
+  var wi = weekInfo(w);
+  var objetivo = rirFor(exId, wi).rir;
+  var step = stepFor(exId);
+  var kg = p.kg, why = '', delta = 0;
+
+  if(wi.deload || wi.taper){
+    kg = Math.round(p.kg * 0.85 / step) * step;
+    return {kg:kg, from:'auto', why:'Semana de descarga. Hiciste <b>'+p.kg+' kg</b>; baja a <b>'+kg+' kg</b> (85%) y céntrate en la técnica.'};
+  }
+  if(p.rir === null){
+    return {kg:p.kg, from:'hist', why:'La semana '+p.w+' hiciste <b>'+p.kg+' kg</b> pero no anotaste el RIR. Repite la carga y anótalo esta vez: sin RIR no puedo ajustarte la progresión.'};
+  }
+  var razon = '';
+  if(p.rir >= objetivo + 2){
+    delta = step * 2;
+    razon = 'te sobraron unas '+Math.round(p.rir - objetivo)+' repeticiones, así que se quedó corto';
+  } else if(p.rir > objetivo){
+    delta = step;
+    razon = 'te quedó algo más de margen del previsto';
+  } else if(Math.abs(p.rir - objetivo) < 0.5){
+    delta = step;
+    razon = 'diste exactamente en el objetivo, que es cuando toca subir';
+  } else if(p.rir >= objetivo - 1){
+    delta = 0;
+    razon = 'apretaste más de lo previsto, así que esta semana consolidamos';
+  } else {
+    delta = -step;
+    razon = 'te pasaste de intensidad y conviene recuperar técnica';
+  }
+  /* Tope de seguridad: nunca más de un 10% de salto en una semana.
+     Sin esto, en ejercicios ligeros un incremento fijo se vuelve absurdo
+     (subir de 7 a 12,5 kg es un 79%, no una progresión).                 */
+  var tope = p.kg * 0.10;
+  if(delta > tope) delta = tope;
+  if(delta < -tope) delta = -tope;
+  /* Subimos en múltiplos del disco/mancuerna disponible. Si el salto mínimo
+     es mayor que lo que toca subir, NO forzamos: se progresa con repeticiones. */
+  var pasos = Math.round(delta / step);
+  kg = p.kg + pasos * step;
+  if(kg < step) kg = step;
+  /* Frase concreta: qué hiciste -> qué recomendamos */
+  var hiciste = 'La semana '+p.w+' hiciste <b>'+p.kg+' kg</b>';
+  if(p.reps) hiciste += ' × '+p.reps+' reps';
+  hiciste += ' a RIR '+(Math.round(p.rir*10)/10)+' (el objetivo era '+objetivo+')';
+  var reco;
+  if(delta > 0 && kg === p.kg) reco = 'Toca progresar, pero el salto mínimo disponible ('+step+' kg) sería demasiado. <b>Mantén '+kg+' kg y suma 1-2 repeticiones por serie.</b>';
+  else if(delta > 0) reco = 'Te recomendamos <b>subir a '+kg+' kg</b>: '+razon+'.';
+  else if(delta < 0) reco = 'Te recomendamos <b>bajar a '+kg+' kg</b>: '+razon+'.';
+  else reco = 'Te recomendamos <b>repetir '+kg+' kg</b>: '+razon+'.';
+  return {kg:kg, from:'auto', why:hiciste+'. '+reco, prev:p.kg, prevWeek:p.w};
 }
 function suggestKg(exId, w){
   var wi = weekInfo(w);
@@ -957,13 +1422,14 @@ var BADGES = [
   {id:'w10',     e:'📊', t:'10 pesajes',          chk:function(s){return s.weighIns>=10}},
   {id:'cardio',  e:'🚶', t:'1000 min de cardio',  chk:function(s){return s.cardioMin>=1000}},
   {id:'warm25',  e:'🔸', t:'25 calentamientos',   chk:function(s){return s.warmN>=25}},
+  {id:'vuelta',  e:'🔄', t:'Volver tras un parón', chk:function(s){return s.skipped>=1 && s.sessions>=s.skipped+4}},
   {id:'taper',   e:'💍', t:'Fase Boda',           chk:function(s){return s.reachedTaper}}
 ];
 
 function stats(){
   var s = {sessions:0, bonus:0, fullWeeks:0, maxStreak:0, curStreak:0,
            mesosDone:0, photoSets:0, weighIns:DB.weights.length, reachedTaper:false,
-           cardioMin:0, cardioN:0, warmN:0};
+           cardioMin:0, cardioN:0, warmN:0, skipped:0};
   var w, d, k, i;
   var dates = [];
   for(w=1; w<=TOTAL_WEEKS; w++){
@@ -971,6 +1437,7 @@ function stats(){
     for(d=1; d<=5; d++){
       k = w+'-'+d;
       if(DB.log[k] && DB.log[k].warm && DB.log[k].warm.done) s.warmN++;
+      if(DB.log[k] && DB.log[k].skipped && !DB.log[k].done) s.skipped++;
       if(DB.log[k] && DB.log[k].cardio && DB.log[k].cardio.done){
         s.cardioN++;
         s.cardioMin += (parseInt(DB.log[k].cardio.min,10) || 0);
@@ -1008,19 +1475,26 @@ function streakCount(){
 }
 function maxStreakCalc(){ return consecutiveRun(allDoneKeys()); }
 function allDoneKeys(){
-  var out=[], w, d;
+  /* las sesiones saltadas se ignoran: no cuentan como hechas ni rompen la continuidad */
+  var out=[], w, d, lg;
   for(w=1; w<=TOTAL_WEEKS; w++) for(d=1; d<=4; d++){
-    if(DB.log[w+'-'+d] && DB.log[w+'-'+d].done) out.push({w:w,d:d});
+    lg = DB.log[w+'-'+d];
+    if(!lg) continue;
+    if(lg.done) out.push({w:w, d:d, skip:false});
+    else if(lg.skipped) out.push({w:w, d:d, skip:true});
   }
   return out;
 }
 function consecutiveRun(arr){
   if(!arr.length) return 0;
-  var run = 1, best = 1, i, prev = arr[0], cur;
-  for(i=1;i<arr.length;i++){
+  var run = 0, best = 0, i, prev = null, cur;
+  for(i=0;i<arr.length;i++){
     cur = arr[i];
-    var contiguous = (cur.w===prev.w && cur.d===prev.d+1) || (cur.w===prev.w+1 && prev.d===4 && cur.d===1);
-    if(contiguous){ run++; } else { run = 1; }
+    var contiguous = prev===null ||
+      (cur.w===prev.w && cur.d===prev.d+1) ||
+      (cur.w===prev.w+1 && prev.d===4 && cur.d===1);
+    if(!contiguous) run = 0;
+    if(!cur.skip) run++;          /* la saltada mantiene la cadena pero no suma */
     if(run>best) best = run;
     prev = cur;
   }
@@ -1042,10 +1516,36 @@ function checkBadges(){
 /* =====================================================================
    RENDER — CABECERA
    ===================================================================== */
-function curWeekByDate(){
+/* Semanas transcurridas desde el inicio (solo días completos) */
+function calendarWeek(){
   var st = parseISO(DB.start);
-  var n = daysBetween(st, new Date());
+  var hoy = new Date();
+  var n = Math.floor((hoy.getTime() - st.getTime())/86400000);
   var w = Math.floor(n/7)+1;
+  if(w<1) w=1;
+  if(w>TOTAL_WEEKS) w=TOTAL_WEEKS;
+  return w;
+}
+/* Última semana del plan que has completado (3 de 4 sesiones o más) */
+function lastCompletedWeek(){
+  var w, d, n, ultima = 0;
+  for(w=1; w<=TOTAL_WEEKS; w++){
+    n = 0;
+    for(d=1; d<=4; d++){
+      var lg = DB.log[w+'-'+d];
+      if(lg && (lg.done || lg.skipped)) n++;
+    }
+    if(n >= 3) ultima = w;
+  }
+  return ultima;
+}
+/* La semana en la que estás.
+   El calendario manda (la boda no se mueve), pero el plan NUNCA se adelanta
+   a lo que has entrenado: si te retrasas, no se saltan semanas. */
+function curWeekByDate(){
+  var cal = calendarWeek();
+  var porEntreno = lastCompletedWeek() + 1;
+  var w = Math.min(cal, porEntreno);
   if(w<1) w=1;
   if(w>TOTAL_WEEKS) w=TOTAL_WEEKS;
   return w;
@@ -1082,8 +1582,10 @@ function renderList(){
   document.getElementById('moti').innerHTML =
     '<div class="mt">'+m[0]+'</div>'+m[1];
 
+  var retraso = calendarWeek() - curWeekByDate();
   document.getElementById('wklabel').innerHTML =
-    'Semana '+cw+' de '+TOTAL_WEEKS+'<small>'+wi.label+' · objetivo RIR '+wi.rir+'</small>';
+    'Semana '+cw+' de '+TOTAL_WEEKS+'<small>'+wi.label+' · objetivo RIR '+wi.rir+
+    (retraso>0 ? ' · vas '+retraso+' semana'+(retraso>1?'s':'')+' por detrás del calendario' : '')+'</small>';
   document.getElementById('wprev').disabled = (cw<=1);
   document.getElementById('wnext').disabled = (cw>=TOTAL_WEEKS);
 
@@ -1096,14 +1598,16 @@ function renderList(){
     doneN = 0;
     if(lg && lg.ex){ for(var q in lg.ex){ if(lg.ex.hasOwnProperty(q)) doneN++; } }
     var isDone = lg && lg.done;
+    var isSkip = lg && lg.skipped && !isDone;
     var cardioTag = (lg && lg.cardio && lg.cardio.done) ? ' · 🚶'+(lg.cardio.min||'')+'min' : '';
-    sub = totN+' ejercicios + cardio · ~'+DAYMIN[d]+' min';
+    sub = totN+' ejercicios · ~'+dayMinutes(d, wi)+' min';
     if(isDone) sub = 'Completado · '+(lg.date?fmtShort(lg.date):'')+cardioTag;
     else if(doneN>0) sub = doneN+' de '+totN+' registrados'+cardioTag;
-    h += '<div class="day'+(isDone?' done':'')+(d===5?' bonus':'')+'" onclick="openSession('+d+')">'+
-           '<div class="dnum">'+(d===5?'★':d)+'</div>'+
+    if(isSkip) sub = 'Saltada'+(lg.skipDate?' · '+fmtShort(lg.skipDate):'');
+    h += '<div class="day'+(isDone?' done':'')+(isSkip?' skipped':'')+(d===5?' bonus':'')+'" onclick="openSession('+d+')">'+
+           '<div class="dnum">'+(isSkip?'⤼':(d===5?'★':d))+'</div>'+
            '<div class="dinfo"><b>'+(d===5?'Bonus':'Día '+d)+' · '+DAYNAMES[d]+'</b><span>'+sub+'</span></div>'+
-           '<div class="dchev">'+(isDone?'✓':'›')+'</div>'+
+           '<div class="dchev">'+(isDone?'✓':(isSkip?'⤼':'›'))+'</div>'+
          '</div>';
   }
   document.getElementById('daylist').innerHTML = h;
@@ -1131,8 +1635,9 @@ function openSession(d){
   var h = '<button id="backbtn" onclick="closeSession()">‹ Semana '+cw+'</button>';
   h += '<div class="card" style="margin-bottom:13px">'+
          '<h2 style="margin-bottom:4px">'+(d===5?'Bonus':'Día '+d)+' · '+DAYNAMES[d]+'</h2>'+
-         '<div class="muted">'+wi.label+' · objetivo <b>RIR '+wi.rir+'</b>'+
-         (d===5?' · opcional, solo si tienes ganas y estás recuperada':'')+'</div>'+
+         '<div class="muted">'+wi.label+' · objetivo <b>RIR '+wi.rir+'</b><br>~'+liftMinutes(d, wi)+' min de pesas + '+(CARDIO[d]?CARDIO[d].min:0)+' de cardio'+
+         (d===5?' · opcional':'')+'</div>'+
+         (d===5?'<div class="d5note">📍 <b>Dónde colocarlo:</b> lo ideal es hacerlo al final de la semana y dejar un día de descanso antes de volver al Día 1. Si lo haces justo antes del Día 1, baja la abducción a 2 series y las lumbares a 2: el Día 1 necesita glúteo y erectores frescos.<br><br>Si lo encajas entre semana, el mejor sitio es justo antes del Día 2 (empujes): es el único que no comparte nada con este.</div>':'')+
          '<div class="excount" id="excount"></div>'+
        '</div>';
 
@@ -1153,9 +1658,23 @@ function openSession(d){
   /* Cardio — al final de la sesión */
   h += cardioBlock(d, lg);
 
+  /* Vuelta a la calma */
+  var cdone = lg.cool && lg.cool.done;
+  h += '<div class="cool'+(cdone?' done':'')+'" id="coolbox">'+
+         '<h4>🌿 Vuelta a la calma — 3-4 min</h4>'+
+         '<div>'+COOL[d]+'</div>'+
+         '<div style="margin-top:11px"><button class="ctog'+(cdone?' on':'')+'" id="cooltog" onclick="toggleCool()">'+
+         (cdone?'✓ Hecho':'Marcar hecho')+'</button></div>'+
+       '</div>';
+
   h += '<button class="btn'+(lg.done?' sec':'')+'" onclick="finishSession()">'+
          (lg.done ? '✓ Sesión completada — desmarcar' : 'Completar sesión')+
        '</button>';
+  if(!lg.done){
+    h += '<button class="btn skip'+(lg.skipped?' on':'')+'" onclick="skipSession()">'+
+           (lg.skipped ? '⤼ Saltada — deshacer' : 'Marcar como saltada')+
+         '</button>';
+  }
 
   document.getElementById('sesswrap').innerHTML = h;
   document.getElementById('sesswrap').style.display = 'block';
@@ -1224,7 +1743,7 @@ function drawEvo(exId, box){
     data.push(hist[i].kg);
     cols.push(hist[i].rir===null ? '#A8A499' : RIRCOL[hist[i].rir]);
   }
-  box.innerHTML = '<canvas id="evoc-'+exId+'" height="130"></canvas>'+
+  box.innerHTML = '<div class="chartbox xs" style="margin-top:0"><canvas id="evoc-'+exId+'"></canvas></div>'+
                   '<div class="rirkey">'+
                     '<span><i style="background:'+RIRCOL[0]+'"></i>RIR 0</span>'+
                     '<span><i style="background:'+RIRCOL[1]+'"></i>RIR 1</span>'+
@@ -1267,6 +1786,14 @@ function drawEvo(exId, box){
     }
   });
 }
+function toggleAlt(id){
+  var el = document.getElementById('alt-'+id);
+  if(!el) return;
+  var open = el.className.indexOf('on') > -1;
+  el.className = open ? 'alt' : 'alt on';
+  var b = document.getElementById('altbtn-'+id);
+  if(b) b.innerHTML = (open?'▸':'▾')+' Alternativas';
+}
 function toggleTech(id){
   var el = document.getElementById('tech-'+id);
   if(!el) return;
@@ -1274,6 +1801,16 @@ function toggleTech(id){
   el.className = open ? 'tech' : 'tech on';
   var btns = document.getElementById('ex-'+id).getElementsByClassName('techbtn');
   if(btns.length) btns[0].innerHTML = (open?'▸':'▾')+' Cómo se hace';
+}
+function toggleCool(){
+  var lg = ensureLog();
+  if(!lg.cool) lg.cool = {done:false};
+  lg.cool.done = !lg.cool.done;
+  sdb();
+  var box = document.getElementById('coolbox');
+  var tog = document.getElementById('cooltog');
+  if(box) box.className = 'cool' + (lg.cool.done?' done':'');
+  if(tog){ tog.className = 'ctog' + (lg.cool.done?' on':''); tog.textContent = lg.cool.done?'✓ Hecho':'Marcar hecho'; }
 }
 function toggleWarm(){
   var lg = ensureLog();
@@ -1345,7 +1882,12 @@ function exBlock(p, wi, lg, idx){
   var isNew = (e.from === wi.meso && e.from > 1);
   var ki = suggestKgInfo(p.id, cw);
   var kg = ki.kg;
-  var kglabel = kg ? (ki.from==='hist' ? ' · última vez <b>'+kg+' kg</b>' : ' · empieza en <b>'+kg+' kg</b>') : '';
+  var kglabel = '';
+  if(kg){
+    if(ki.from === 'auto') kglabel = ' · esta semana <b>'+kg+' kg</b> (la última: '+ki.prev+')';
+    else if(ki.from === 'hist') kglabel = ' · última vez <b>'+kg+' kg</b>';
+    else kglabel = ' · empieza en <b>'+kg+' kg</b>';
+  }
   var anyR = false, ri;
   for(ri=0; ri<rec.s.length; ri++){
     if(rec.s[ri] && rec.s[ri].rir!==undefined && rec.s[ri].rir!==null) anyR = true;
@@ -1369,9 +1911,20 @@ function exBlock(p, wi, lg, idx){
   }
   if(EX[p.id].kg){
     h += '<button class="techbtn" style="margin-left:14px" onclick="toggleEvo(\''+p.id+'\')" id="evobtn-'+p.id+'">▸ Ver evolución</button>';
-    h += '<div class="evo" id="evo-'+p.id+'"></div>';
+  }
+  if(ALT[p.id]){
+    h += '<button class="techbtn" style="margin-left:14px" onclick="toggleAlt(\''+p.id+'\')" id="altbtn-'+p.id+'">▸ Alternativas</button>';
+  }
+  if(EX[p.id].kg) h += '<div class="evo" id="evo-'+p.id+'"></div>';
+  if(ALT[p.id]){
+    h += '<div class="alt" id="alt-'+p.id+'">'+
+           '<b>Si está ocupado, en este orden:</b>'+
+           '<div>'+ALT[p.id].split(' · ').map(function(x,i){ return (i+1)+'. '+x; }).join('<br>')+'</div>'+
+           '<em>Mantienen la misma función. Anota el peso igual: el histórico sigue siendo válido.</em>'+
+         '</div>';
   }
   var rf = rirFor(p.id, wi);
+  if(ki.why) h += '<div class="kgwhy">📈 '+ki.why+'</div>';
   h += '<div class="rirtarget">Objetivo esta semana: <b>RIR '+rf.rir+'</b> en cada serie</div>';
   if(rf.adjusted && rf.why) h += '<div class="riradj">⚠️ '+rf.why+'</div>';
   h += '<div class="setgrid">';
@@ -1383,7 +1936,7 @@ function exBlock(p, wi, lg, idx){
                ((rec.rir!==undefined && rec.rir!==null) ? rec.rir : null);
     h += '<div class="setrow'+(srir!==null?' ok':'')+'" id="row-'+p.id+'-'+i2+'">';
     h += '<span class="setn">S'+(i2+1)+'</span>';
-    h += '<input id="in-'+p.id+'-'+i2+'-kg" type="number" step="0.5" inputmode="decimal" value="'+(sv2.kg!==undefined&&sv2.kg!==''?sv2.kg:'')+'" '+
+    h += '<input id="in-'+p.id+'-'+i2+'-kg" type="text" inputmode="decimal" value="'+(sv2.kg!==undefined&&sv2.kg!==''?sv2.kg:'')+'" '+
          'placeholder="'+(kg||'')+'" oninput="setVal(\''+p.id+'\','+i2+',\'kg\',this.value,true)">';
     h += '<input id="in-'+p.id+'-'+i2+'-reps" type="number" inputmode="numeric" value="'+(sv2.reps!==undefined&&sv2.reps!==''?sv2.reps:'')+'" '+
          'placeholder="'+String(p.reps).split(' ')[0]+'" oninput="setVal(\''+p.id+'\','+i2+',\'reps\',this.value,true)">';
@@ -1398,10 +1951,29 @@ function exBlock(p, wi, lg, idx){
   }
   h += '</div>';
   h += '<div id="fb-'+p.id+'" class="setfb">'+exFeedback(rec, rf)+'</div>';
+  var rs = restFor(p.id);
+  if(p.ss){
+    h += '<div class="ssnote">🔗 Superserie: encadena con el siguiente ejercicio sin descanso. Descansa solo al terminar los dos.</div>';
+  }
+  h += '<div class="restrow">'+
+         '<span class="restlbl">'+(p.ss?'Tras la pareja: ':'Descanso ')+fmtSec(rs)+
+         (String(p.reps).indexOf('/')>-1 ? ' (tras hacer los dos lados)' : '')+
+         (p.adv?' · en el rest-pause solo 15-20 seg':'')+'</span>'+
+         '<button class="restbtn" onclick="restStart('+rs+',\''+p.id+'\')">⏱ Descansar</button>'+
+       '</div>';
   h += '</div>';
   return h;
 }
+/* acepta "12,5" y "12.5" indistintamente */
+function normNum(v){
+  if(v === undefined || v === null) return '';
+  v = String(v).replace(',', '.').replace(/[^0-9.]/g, '');
+  var parts = v.split('.');
+  if(parts.length > 2) v = parts[0] + '.' + parts.slice(1).join('');
+  return v;
+}
 function setVal(exId, i, field, v, manual){
+  if(field === 'kg') v = normNum(v);
   var k = cw+'-'+cd;
   if(!DB.log[k]) DB.log[k] = {done:false, date:null, ex:{}};
   if(!DB.log[k].ex[exId]) DB.log[k].ex[exId] = {s:[], rir:null};
@@ -1476,7 +2048,8 @@ function exFeedback(rec, rf){
     if(last > first + 1) msg += ' Se te fue subiendo el RIR: quizá empezaste demasiado fuerte.';
     else if(last < first - 1) msg += ' Fuiste a más serie a serie.';
   }
-  if(last < rf.rir) msg += ' Ojo: por debajo del objetivo (' + rf.rir + ').';
+  if(last < rf.rir) msg += ' Apretaste más de lo previsto (objetivo RIR '+rf.rir+'): bien si te encontrabas fuerte, pero deja margen para seguir subiendo las próximas semanas.';
+  else if(last > rf.rir + 1) msg += ' Te has quedado por encima del objetivo (RIR '+rf.rir+'): puedes subir carga la próxima vez.';
   return '<div id="rirfb">' + msg + '</div>';
 }
 function setRir(exId, i, v, manual){
@@ -1514,6 +2087,7 @@ function setRir(exId, i, v, manual){
   if(fb) fb.innerHTML = exFeedback(rec, rirFor(exId, wi));
 }
 function closeSession(){
+  restStop();
   for(var id in evoCharts){
     if(evoCharts.hasOwnProperty(id) && evoCharts[id]) evoCharts[id].destroy();
   }
@@ -1544,11 +2118,26 @@ function finishSession(){
   setTimeout(closeSession, 1400);
   /* recordatorio de fotos al cerrar mesociclo */
   var wi = weekInfo(cw);
-  if(!wi.taper && wi.wim===5 && cd===4){
+  if(!wi.taper && cw===mesoRange(wi.meso).to && cd===4){
     setTimeout(function(){
       showModal('📸','Fin del Mesociclo '+wi.meso,
         'Toca tanda de fotos y pesaje. Misma luz, misma ropa, mismo sitio — así el cambio se ve de verdad.');
     }, b?2400:900);
+  }
+}
+function skipSession(){
+  var k = cw+'-'+cd;
+  if(!DB.log[k]) DB.log[k] = {done:false, date:null, ex:{}};
+  var lg = DB.log[k];
+  lg.skipped = !lg.skipped;
+  if(lg.skipped){ lg.done = false; lg.skipDate = todayISO(); }
+  else { lg.skipDate = null; }
+  save();
+  if(lg.skipped){
+    toast('⤼ Saltada. No cuenta como fallo ni rompe la racha.');
+    setTimeout(closeSession, 1100);
+  } else {
+    openSession(cd);
   }
 }
 function sessionMessage(){
@@ -1569,8 +2158,8 @@ function renderBoda(){
   var h = '', i, w, d, cnt, tot, pct, state, curW = curWeekByDate();
   for(i=1;i<=9;i++){
     var isTaper = (i===9);
-    var from = isTaper ? 41 : (i-1)*5+1;
-    var to   = isTaper ? 43 : i*5;
+    var rg = mesoRange(i);
+    var from = rg.from, to = rg.to;
     cnt=0; tot=(to-from+1)*4;
     for(w=from; w<=to; w++) for(d=1;d<=4;d++) if(DB.log[w+'-'+d] && DB.log[w+'-'+d].done) cnt++;
     pct = Math.round(cnt/tot*100);
@@ -1596,6 +2185,192 @@ function renderBoda(){
             '<b>'+b.e+'</b><span>'+b.t+'</span></div>';
   }
   document.getElementById('badges').innerHTML = bh;
+}
+
+/* =====================================================================
+   TEMPORIZADOR DE DESCANSO
+   ===================================================================== */
+var restT = null, restLeft = 0, restTotal = 0, restEnd = 0;
+function restStart(sec, exId){
+  restTotal = sec;
+  restEnd = Date.now() + sec*1000;
+  var bar = document.getElementById('restbar');
+  bar.className = 'on';
+  document.getElementById('rbname').textContent =
+    (exId && EX[exId]) ? EX[exId].n : 'Descanso';
+  if(restT) clearInterval(restT);
+  restTick();
+  restT = setInterval(restTick, 250);
+}
+function restTick(){
+  restLeft = Math.round((restEnd - Date.now())/1000);
+  var bar = document.getElementById('restbar');
+  if(restLeft <= 0){
+    document.getElementById('rbtime').textContent = '¡Vamos!';
+    document.getElementById('rbprog').style.width = '0%';
+    bar.className = 'on done';
+    if(restT){ clearInterval(restT); restT = null; }
+    buzz();
+    setTimeout(function(){
+      if(!restT) restStop();
+    }, 5000);
+    return;
+  }
+  document.getElementById('rbtime').textContent = fmtSec(restLeft);
+  document.getElementById('rbprog').style.width = (restLeft/restTotal*100)+'%';
+}
+function restAdd(s){
+  if(!restEnd) return;
+  restEnd += s*1000;
+  var bar = document.getElementById('restbar');
+  bar.className = 'on';
+  if(!restT) restT = setInterval(restTick, 250);
+  restTotal += s;
+  restTick();
+}
+function restStop(){
+  if(restT){ clearInterval(restT); restT = null; }
+  restEnd = 0;
+  document.getElementById('restbar').className = '';
+}
+function buzz(){
+  try{ if(navigator.vibrate) navigator.vibrate([180,90,180]); }catch(e){}
+  try{
+    var AC = window.AudioContext || window.webkitAudioContext;
+    if(!AC) return;
+    var ctx = new AC();
+    var o = ctx.createOscillator(), g = ctx.createGain();
+    o.connect(g); g.connect(ctx.destination);
+    o.frequency.value = 880; o.type = 'sine';
+    g.gain.setValueAtTime(0.001, ctx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.25, ctx.currentTime+0.02);
+    g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime+0.45);
+    o.start(); o.stop(ctx.currentTime+0.5);
+  }catch(e){}
+}
+
+/* =====================================================================
+   CALENDARIO
+   ===================================================================== */
+var calY = null, calM = null, calSel = null;
+var MONTHS = ['enero','febrero','marzo','abril','mayo','junio','julio',
+              'agosto','septiembre','octubre','noviembre','diciembre'];
+
+/* índice de todo lo ocurrido por fecha */
+function calIndex(){
+  var idx = {}, w, d, k, lg, i;
+  function ent(iso){
+    if(!idx[iso]) idx[iso] = {sess:[], cardio:[], period:false, weight:null};
+    return idx[iso];
+  }
+  for(w=1; w<=TOTAL_WEEKS; w++) for(d=1; d<=5; d++){
+    k = w+'-'+d; lg = DB.log[k];
+    if(!lg || !lg.date) continue;
+    if(lg.done) ent(lg.date).sess.push({w:w, d:d});
+    if(lg.cardio && lg.cardio.done){
+      ent(lg.date).cardio.push({w:w, d:d, min:lg.cardio.min, type:(lg.cardio.type||CARDIO[d].n)});
+    }
+  }
+  for(i=0;i<DB.periods.length;i++) ent(DB.periods[i]).period = true;
+  for(i=0;i<DB.weights.length;i++) ent(DB.weights[i].d).weight = DB.weights[i].kg;
+  return idx;
+}
+function planWeekOf(iso){
+  var n = daysBetween(parseISO(DB.start), parseISO(iso));
+  if(n < 0) return null;
+  var w = Math.floor(n/7)+1;
+  return (w >= 1 && w <= TOTAL_WEEKS) ? w : null;
+}
+function navMonth(n){
+  calM += n;
+  if(calM < 0){ calM = 11; calY--; }
+  if(calM > 11){ calM = 0; calY++; }
+  calSel = null;
+  renderCal();
+}
+function renderCal(){
+  if(calY === null){
+    var now = new Date();
+    calY = now.getFullYear(); calM = now.getMonth();
+  }
+  var idx = calIndex();
+  var first = new Date(calY, calM, 1);
+  var startDow = (first.getDay() + 6) % 7;         // lunes = 0
+  var nDays = new Date(calY, calM+1, 0).getDate();
+  var todayI = todayISO();
+
+  /* rango de semanas del plan en este mes */
+  var wA = planWeekOf(calY+'-'+pad(calM+1)+'-01');
+  var wB = planWeekOf(calY+'-'+pad(calM+1)+'-'+pad(nDays));
+  var sub = '';
+  if(wA && wB) sub = (wA===wB) ? 'Semana '+wA+' del plan' : 'Semanas '+wA+'–'+wB+' del plan';
+  else if(wB) sub = 'El plan empieza este mes';
+  else if(wA) sub = 'Semana '+wA+' del plan';
+  document.getElementById('calmonth').innerHTML =
+    MONTHS[calM]+' '+calY + (sub?'<small>'+sub+'</small>':'');
+
+  var h = '', i, iso, e, dots, cls;
+  for(i=0;i<startDow;i++) h += '<div class="cell pad"></div>';
+  var sessCount = 0, activeDays = 0;
+  for(i=1;i<=nDays;i++){
+    iso = calY+'-'+pad(calM+1)+'-'+pad(i);
+    e = idx[iso];
+    dots = '';
+    if(e){
+      var hasReg = false, j;
+      for(j=0;j<e.sess.length;j++){
+        dots += '<i class="'+(e.sess[j].d===5?'dot-b':'dot-s')+'"></i>';
+        sessCount++; hasReg = true;
+      }
+      if(!e.sess.length && e.cardio.length){ dots += '<i class="dot-c"></i>'; hasReg = true; }
+      if(e.period) dots += '<i class="dot-p"></i>';
+      if(e.weight !== null) dots += '<i class="dot-w"></i>';
+      if(hasReg) activeDays++;
+    }
+    cls = 'cell';
+    if(iso === todayI) cls += ' today';
+    if(iso === calSel) cls += ' sel';
+    if(iso > todayI) cls += ' future';
+    h += '<div class="'+cls+'" onclick="selDay(\''+iso+'\')">'+
+           '<span class="cd">'+i+'</span><span class="cdots">'+dots+'</span></div>';
+  }
+  document.getElementById('calgrid').innerHTML = h;
+  document.getElementById('cal-s').textContent = sessCount;
+  document.getElementById('cal-d').textContent = activeDays;
+  renderCalDetail(idx);
+}
+function selDay(iso){
+  calSel = (calSel === iso) ? null : iso;
+  renderCal();
+}
+function renderCalDetail(idx){
+  var box = document.getElementById('caldetail');
+  if(!calSel){ box.style.display = 'none'; return; }
+  var e = idx[calSel], h = '', i;
+  var d = parseISO(calSel);
+  var DOW = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+  h += '<h2>'+DOW[d.getDay()]+', '+d.getDate()+' de '+MONTHS[d.getMonth()]+'</h2>';
+  var pw = planWeekOf(calSel);
+  if(pw){
+    var wi = weekInfo(pw);
+    h += '<div class="muted" style="margin-bottom:8px">'+wi.label+' · objetivo RIR '+wi.rir+'</div>';
+  }
+  if(!e || (!e.sess.length && !e.cardio.length && !e.period && e.weight===null)){
+    h += '<div class="dtline">Sin registros este día.</div>';
+  } else {
+    for(i=0;i<e.sess.length;i++){
+      h += '<div class="dtline"><b>'+(e.sess[i].d===5?'Bonus':'Día '+e.sess[i].d)+' · '+
+           DAYNAMES[e.sess[i].d]+'</b> — semana '+e.sess[i].w+'</div>';
+    }
+    for(i=0;i<e.cardio.length;i++){
+      h += '<div class="dtline">🚶 '+e.cardio[i].type+
+           (e.cardio[i].min?' · '+e.cardio[i].min+' min':'')+'</div>';
+    }
+    if(e.period) h += '<div class="dtline">🌙 Primer día de regla</div>';
+    if(e.weight !== null) h += '<div class="dtline">⚖️ '+e.weight+' kg</div>';
+  }
+  box.innerHTML = h;
+  box.style.display = 'block';
 }
 
 /* =====================================================================
@@ -1732,7 +2507,7 @@ function renderCiclo(){
    ===================================================================== */
 var wChart=null, exChart=null;
 function saveWeight(){
-  var v = parseFloat(document.getElementById('winput').value);
+  var v = parseFloat(normNum(document.getElementById('winput').value));
   if(!v || v<=0){ toast('Escribe un peso válido.'); return; }
   var t = todayISO(), i, found=false;
   for(i=0;i<DB.weights.length;i++){
@@ -1747,34 +2522,61 @@ function saveWeight(){
   toast('⚖️ Peso guardado.');
   renderProgreso();
 }
+function delWeight(iso){
+  var i;
+  for(i=0;i<DB.weights.length;i++){
+    if(DB.weights[i].d === iso){ DB.weights.splice(i,1); save(); renderProgreso(); return; }
+  }
+}
 function renderProgreso(){
   /* hint */
   var hint = document.getElementById('whint');
-  if(DB.weights.length>=2){
-    var f = DB.weights[0], l = DB.weights[DB.weights.length-1];
+  var W = DB.weights;
+  if(W.length >= 2){
+    var f = W[0], l = W[W.length-1];
     var diff = (l.kg - f.kg).toFixed(1);
-    hint.innerHTML = 'Último: <b>'+l.kg+' kg</b> ('+fmtShort(l.d)+') · '+
-      (diff>0?'+':'')+diff+' kg desde el inicio · '+DB.weights.length+' pesajes';
+    var prev = W[W.length-2];
+    var sem = (l.kg - prev.kg).toFixed(1);
+    hint.innerHTML = 'Ahora <b>'+l.kg+' kg</b> ('+fmtShort(l.d)+')<br>'+
+      (diff>0?'+':'')+diff+' kg desde el inicio ('+f.kg+' kg el '+fmtShort(f.d)+')'+
+      ' · último cambio '+(sem>0?'+':'')+sem+' kg';
+  } else if(W.length === 1){
+    hint.innerHTML = 'Registrado <b>'+W[0].kg+' kg</b> el '+fmtShort(W[0].d)+
+      '. En cuanto añadas un segundo pesaje verás aquí la tendencia.';
   } else {
     hint.textContent = 'Pésate una vez por semana, mismo día y misma hora — en ayunas es lo más estable.';
   }
-  /* chart peso */
+  /* chart: desde el primer registro */
   var ctx = document.getElementById('wchart');
   if(wChart){ wChart.destroy(); wChart=null; }
-  if(DB.weights.length>=2 && window.Chart){
+  if(W.length >= 1 && window.Chart){
     var labels=[], data=[], i;
-    for(i=0;i<DB.weights.length;i++){ labels.push(fmtShort(DB.weights[i].d)); data.push(DB.weights[i].kg); }
+    for(i=0;i<W.length;i++){ labels.push(fmtShort(W[i].d)); data.push(W[i].kg); }
     wChart = new Chart(ctx, {
       type:'line',
-      data:{labels:labels, datasets:[{data:data, borderColor:'#2F5233', backgroundColor:'rgba(47,82,51,.09)',
-        fill:true, tension:.3, pointRadius:3, pointBackgroundColor:'#2F5233'}]},
-      options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:false}}, maintainAspectRatio:false}
+      data:{labels:labels, datasets:[{data:data, borderColor:'#2F5233',
+        backgroundColor:'rgba(47,82,51,.09)', fill:true, tension:.3,
+        pointRadius:4, pointBackgroundColor:'#2F5233'}]},
+      options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:false, ticks:{font:{size:10}}},
+        x:{ticks:{font:{size:10}}}}, maintainAspectRatio:false}
     });
   }
+  /* listado de pesajes */
+  var box = document.getElementById('wlist'), out='', j, delta;
+  for(j=W.length-1; j>=0 && j>W.length-8; j--){
+    delta = (j>0) ? (W[j].kg - W[j-1].kg) : null;
+    out += '<div class="mrow"><span class="md">'+fmtShort(W[j].d)+'</span>'+
+           '<span class="mv">'+W[j].kg+' <em>kg</em>'+
+           (delta!==null ? '  <em>'+(delta>0?'+':'')+delta.toFixed(1)+'</em>' : '')+'</span>'+
+           '<button onclick="delWeight(\''+W[j].d+'\')">✕</button></div>';
+  }
+  if(box) box.innerHTML = out;
+
+  renderMeasures();
+  renderShiftInfo();
+  renderWTable();
   renderPhotoSelect();
   renderPhotos();
-  renderExSelect();
-  renderExChart();
 }
 
 /* ---------- FOTOS ---------- */
@@ -1782,10 +2584,11 @@ function renderPhotoSelect(){
   var sel = document.getElementById('photosel');
   if(sel.options.length) return;
   var h='', i;
-  for(i=1;i<=8;i++) h += '<option value="m'+i+'">Fin de Mesociclo '+i+' (semana '+(i*5)+')</option>';
-  h += '<option value="m9">Fase Boda (semana 43)</option>';
+  for(i=1;i<=8;i++) h += '<option value="m'+i+'">Fin de Mesociclo '+i+' (semana '+mesoRange(i).to+')</option>';
+  h += '<option value="m9">Fase Boda (semana 42)</option>';
   sel.innerHTML = h;
-  var cur = Math.min(9, Math.ceil(curWeekByDate()/5));
+  var cw2 = curWeekByDate(), cur = 9, mi;
+  for(mi=1;mi<=9;mi++){ if(cw2 <= mesoRange(mi).to){ cur = mi; break; } }
   sel.value = 'm'+cur;
 }
 function renderPhotos(){
@@ -1836,60 +2639,249 @@ function pickPhoto(key, slot){
   inp.click();
 }
 
-/* ---------- PROGRESIÓN POR EJERCICIO ---------- */
-function renderExSelect(){
-  var sel = document.getElementById('exsel');
-  if(sel.options.length) return;
-  var h='', id;
-  for(id in EX){ if(EX.hasOwnProperty(id) && EX[id].kg) h += '<option value="'+id+'">'+EX[id].n+'</option>'; }
-  sel.innerHTML = h;
-  sel.value = 'g_hip';
-}
-function renderExChart(){
-  var id = document.getElementById('exsel').value;
-  var labels=[], data=[], w, d, k, lg, rec, i, best;
-  for(w=1; w<=TOTAL_WEEKS; w++){
-    best = null;
-    for(d=1; d<=5; d++){
-      k = w+'-'+d; lg = DB.log[k];
-      if(lg && lg.ex && lg.ex[id]){
-        rec = lg.ex[id];
-        for(i=0;i<rec.s.length;i++){
-          if(rec.s[i] && rec.s[i].kg){
-            var v = parseFloat(rec.s[i].kg);
-            if(best===null || v>best) best = v;
-          }
-        }
+/* ---------- AJUSTES YA APLICADOS AL PLAN ----------
+   Se ejecutan una sola vez, la primera vez que se abre esta versión.
+   Cada uno lleva su marca para no repetirse nunca.
+------------------------------------------------------ */
+
+/* ---------- SEMANA 1 YA ENTRENADA ----------
+   Datos reales de las cuatro sesiones. Se siembran una sola vez y solo
+   rellenan lo que falte: nunca sobrescriben nada que ya esté registrado.
+--------------------------------------------- */
+var SEMANA1 = {
+  '1-1': {date:'2026-08-19', warm:true, cardio:{min:'15', type:'Elíptica'}, ex:{
+    g_hip:  {kg:'50', reps:'8',  rir:[3,2,2,1]},
+    g_rdl:  {kg:'12', reps:'12', rir:[3,3,3]},
+    g_bulg: {kg:'10', reps:'10', rir:[2,2,2]},
+    g_rana: {kg:'7',  reps:'13', rir:[3,3,3]},
+    g_bd:   {kg:'7',  reps:'12', rir:[3,3,3]},
+    g_abd:  {kg:'61', reps:'12', rir:[3,3,3]}
+  }},
+  '1-2': {date:'2026-08-21', warm:true, ex:{
+    p_banca:{kg:'20', reps:'10', rir:[3,3,3]},
+    p_mil:  {kg:'14', reps:'12', rir:[3,3,3]},
+    p_lat:  {kg:'5',  reps:'12', rir:[3,3,3,3]},
+    p_tri:  {kg:'9',  reps:'12', rir:[3,3,3]},
+    p_face: {kg:'18', reps:'12', rir:[1,1,1]}
+  }},
+  '1-3': {date:'2026-09-05', warm:true, ex:{
+    q_sent: {kg:'25', reps:'8',  rir:[3,3,3]},
+    q_prensa:{kg:'74',reps:'12', rir:[2,2,2]},
+    q_ext:  {kg:'60', reps:'15', rir:[2,2,2]}
+  }},
+  '1-4': {date:'2026-09-08', warm:true, ex:{}}
+};
+var PESO1 = [{d:'2026-08-19', kg:63}];
+function seedSemana1(){
+  var k, s, id, e, i, lg;
+  /* La semana 1 se entrenó a partir del 19 de agosto; con el retraso por
+     enfermedad, el plan arranca el 26. En instalación limpia lo fijamos. */
+  if(!DB.start || DB.start > '2026-08-26') DB.start = '2026-08-26';
+  /* pesaje inicial */
+  var p, existe, q;
+  for(p=0;p<PESO1.length;p++){
+    existe = false;
+    for(q=0;q<DB.weights.length;q++) if(DB.weights[q].d === PESO1[p].d) existe = true;
+    if(!existe) DB.weights.push({d:PESO1[p].d, kg:PESO1[p].kg});
+  }
+  DB.weights.sort(function(a,b){ return a.d<b.d?-1:1; });
+  for(k in SEMANA1){
+    if(!SEMANA1.hasOwnProperty(k)) continue;
+    s = SEMANA1[k];
+    if(!DB.log[k]) DB.log[k] = {done:false, date:null, ex:{}};
+    lg = DB.log[k];
+    if(!lg.date) lg.date = s.date;
+    lg.done = true;
+    if(s.warm && !lg.warm) lg.warm = {done:true};
+    if(s.cardio && !lg.cardio) lg.cardio = {done:true, min:s.cardio.min, type:s.cardio.type};
+    for(id in s.ex){
+      if(!s.ex.hasOwnProperty(id)) continue;
+      if(lg.ex[id]) continue;              /* ya registrado: no lo toco */
+      e = s.ex[id];
+      lg.ex[id] = {s:[], rir:null, done:true};
+      for(i=0;i<e.rir.length;i++){
+        lg.ex[id].s.push({kg:e.kg, reps:e.reps, rir:e.rir[i], auto:{}});
       }
     }
-    if(best!==null){ labels.push('S'+w); data.push(best); }
-  }
-  var ctx = document.getElementById('exchart');
-  if(exChart){ exChart.destroy(); exChart=null; }
-  var box = document.getElementById('exdelta');
-  if(!data.length){
-    box.textContent = 'Sin datos registrados de este ejercicio todavía.';
-    return;
-  }
-  if(window.Chart){
-    exChart = new Chart(ctx,{
-      type:'line',
-      data:{labels:labels, datasets:[{data:data, borderColor:'#B5811F',
-        backgroundColor:'rgba(181,129,31,.10)', fill:true, tension:.25,
-        pointRadius:3, pointBackgroundColor:'#B5811F'}]},
-      options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:false}}, maintainAspectRatio:false}
-    });
-  }
-  var delta = data[data.length-1] - data[0];
-  if(delta > 0){
-    box.textContent = '📈 '+EX[id].n+': +'+delta.toFixed(1)+' kg desde que empezaste.';
-  } else if(delta === 0){
-    box.textContent = 'Estabilizada en '+data[0]+' kg. La próxima semana toca subir.';
-  } else {
-    box.textContent = 'Ajuste a la baja ('+delta.toFixed(1)+' kg). Normal tras una descarga o un parón.';
   }
 }
-
+function applyAdjustments(){
+  if(!DB.adj) DB.adj = {};
+  /* Semana perdida por enfermedad: el plan se retrasa 7 días */
+  if(!DB.adj.semanaMala){
+    var d = parseISO(DB.start);
+    d.setDate(d.getDate() + 7);
+    if(daysBetween(d, new Date()) >= 0){
+      DB.start = d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+    }
+    DB.adj.semanaMala = true;
+    save();
+  }
+  /* Semana 1 real, sembrada una única vez */
+  if(!DB.adj.semana1){
+    seedSemana1();
+    DB.adj.semana1 = true;
+    save();
+  }
+}
+/* ---------- AJUSTE DE CALENDARIO ---------- */
+function shiftPlan(days){
+  var d = parseISO(DB.start);
+  d.setDate(d.getDate() + days);
+  var iso = d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+  if(daysBetween(d, new Date()) < 0){ toast('No puedes aplazar tanto: el plan empezaría en el futuro.'); return; }
+  DB.start = iso;
+  save();
+  cw = curWeekByDate();
+  DB.pos.w = cw; save();
+  renderHeader(); renderList(); renderProgreso();
+  toast(days>0 ? '📅 Plan aplazado una semana. Ahora estás en la semana '+cw+'.'
+               : '📅 Plan adelantado. Ahora estás en la semana '+cw+'.');
+}
+function renderShiftInfo(){
+  var el = document.getElementById('shiftinfo');
+  if(!el) return;
+  var w = curWeekByDate(), wi = weekInfo(w);
+  el.textContent = 'Hoy estás en la semana '+w+' de '+TOTAL_WEEKS+' · '+wi.label;
+}
+/* ---------- MEDIDAS CORPORALES ---------- */
+var mChart = null;
+function saveMeasures(){
+  var p = parseFloat(normNum(document.getElementById('m-pecho').value));
+  var c = parseFloat(normNum(document.getElementById('m-cintura').value));
+  var k = parseFloat(normNum(document.getElementById('m-cadera').value));
+  if(isNaN(p) && isNaN(c) && isNaN(k)){ toast('Escribe al menos una medida.'); return; }
+  var t = todayISO(), i, found = false;
+  if(!DB.measures) DB.measures = [];
+  for(i=0;i<DB.measures.length;i++){
+    if(DB.measures[i].d === t){
+      if(!isNaN(p)) DB.measures[i].pecho = p;
+      if(!isNaN(c)) DB.measures[i].cintura = c;
+      if(!isNaN(k)) DB.measures[i].cadera = k;
+      found = true; break;
+    }
+  }
+  if(!found) DB.measures.push({d:t, pecho:isNaN(p)?null:p, cintura:isNaN(c)?null:c, cadera:isNaN(k)?null:k});
+  DB.measures.sort(function(a,b){ return a.d<b.d?-1:1; });
+  save();
+  document.getElementById('m-pecho').value = '';
+  document.getElementById('m-cintura').value = '';
+  document.getElementById('m-cadera').value = '';
+  toast('📏 Medidas guardadas.');
+  renderMeasures();
+}
+function delMeasure(iso){
+  var i;
+  for(i=0;i<DB.measures.length;i++){
+    if(DB.measures[i].d === iso){ DB.measures.splice(i,1); save(); renderMeasures(); return; }
+  }
+}
+function renderMeasures(){
+  if(!DB.measures) DB.measures = [];
+  var M = DB.measures, hint = document.getElementById('mhint');
+  if(!hint) return;
+  if(M.length >= 2){
+    var f = M[0], l = M[M.length-1], partes = [];
+    function d(a,b,n){ if(a===null||b===null||a===undefined||b===undefined) return; var x=(b-a).toFixed(1); partes.push(n+' '+(x>0?'+':'')+x+' cm'); }
+    d(f.pecho, l.pecho, 'pecho'); d(f.cintura, l.cintura, 'cintura'); d(f.cadera, l.cadera, 'cadera');
+    var ratio = (l.cintura && l.cadera) ? ' · índice cintura/cadera '+(l.cintura/l.cadera).toFixed(2) : '';
+    hint.innerHTML = 'Desde el inicio: '+(partes.length?partes.join(' · '):'sin comparativa')+ratio;
+  } else if(M.length === 1){
+    hint.textContent = 'Primera medición guardada. Repite cada 4-5 semanas, al cerrar cada mesociclo.';
+  } else {
+    hint.textContent = 'Las medidas cuentan lo que la báscula no: puedes perder centímetros sin bajar de peso.';
+  }
+  /* gráfico */
+  var ctx = document.getElementById('mchart');
+  if(mChart){ mChart.destroy(); mChart = null; }
+  if(M.length >= 1 && window.Chart){
+    var lab=[], sp=[], sc=[], sk=[], i;
+    for(i=0;i<M.length;i++){ lab.push(fmtShort(M[i].d)); sp.push(M[i].pecho); sc.push(M[i].cintura); sk.push(M[i].cadera); }
+    mChart = new Chart(ctx, {
+      type:'line',
+      data:{labels:lab, datasets:[
+        {label:'Pecho',   data:sp, borderColor:'#6B9BD1', backgroundColor:'#6B9BD1', tension:.3, pointRadius:3, spanGaps:true},
+        {label:'Cintura', data:sc, borderColor:'#B04A3F', backgroundColor:'#B04A3F', tension:.3, pointRadius:3, spanGaps:true},
+        {label:'Cadera',  data:sk, borderColor:'#2F5233', backgroundColor:'#2F5233', tension:.3, pointRadius:3, spanGaps:true}
+      ]},
+      options:{maintainAspectRatio:false, plugins:{legend:{position:'bottom', labels:{boxWidth:10, font:{size:10}}}},
+        scales:{y:{beginAtZero:false, ticks:{font:{size:10}}}, x:{ticks:{font:{size:10}}}}}
+    });
+  }
+  /* listado */
+  var box = document.getElementById('mlist'), out = '', j;
+  function dif(act, ant){
+    if(act===null||act===undefined) return '';
+    if(ant===null||ant===undefined) return '';
+    var x = act - ant;
+    if(Math.abs(x) < 0.05) return '<i class="ig">=</i>';
+    return '<i class="'+(x<0?'ib':'is')+'">'+(x>0?'+':'')+x.toFixed(1)+'</i>';
+  }
+  for(j=M.length-1; j>=0 && j>M.length-9; j--){
+    var m = M[j], ant = (j>0) ? M[j-1] : null;
+    var v = [];
+    if(m.pecho!==null&&m.pecho!==undefined)   v.push('Pecho <b>'+m.pecho+'</b>'+(ant?dif(m.pecho, ant.pecho):''));
+    if(m.cintura!==null&&m.cintura!==undefined) v.push('Cintura <b>'+m.cintura+'</b>'+(ant?dif(m.cintura, ant.cintura):''));
+    if(m.cadera!==null&&m.cadera!==undefined) v.push('Cadera <b>'+m.cadera+'</b>'+(ant?dif(m.cadera, ant.cadera):''));
+    out += '<div class="mrow2">'+
+             '<div class="mfecha">'+fmtShort(m.d)+
+               '<button onclick="delMeasure(\''+m.d+'\')">✕</button></div>'+
+             '<div class="mvals">'+v.join('')+'</div>'+
+           '</div>';
+  }
+  box.innerHTML = out;
+}
+/* ---------- TABLA DE PESOS ACTUALES ---------- */
+var WGROUPS = [
+  ['Día 1 · Glúteo / Femoral', ['g_hip','g_rdl','g_bd','g_rdluni','g_bulg','g_rana','g_patada','g_hipuni','g_abd']],
+  ['Día 2 · Empujes',          ['p_banca','p_mil','p_lat','p_face','p_tri','p_six']],
+  ['Día 3 · Pierna',           ['q_aduc','q_sent','q_prensa','q_ext','g_sumo','q_goblet','q_pull','q_gemelo']],
+  ['Día 4 · Tirones',          ['t_jalon','t_gir','t_remouni','t_seal','t_pullov','t_reverse','t_lumb','t_curl']],
+  ['Abdominales',              ['ab_crunch','ab_giros']]
+];
+function renderWTable(){
+  var box = document.getElementById('wtable');
+  if(!box) return;
+  var h = '', gi, i, id, last, base, delta;
+  for(gi=0; gi<WGROUPS.length; gi++){
+    h += '<div class="wgh">'+WGROUPS[gi][0]+'</div>';
+    for(i=0; i<WGROUPS[gi][1].length; i++){
+      id = WGROUPS[gi][1][i];
+      if(!EX[id] || !EX[id].kg) continue;
+      last = lastLoggedKg(id, TOTAL_WEEKS+1);
+      base = EX[id].kg;
+      var shown = (last !== null) ? last : base;
+      delta = (last !== null) ? (last - base) : null;
+      h += '<div class="wrowx">'+
+             '<span class="wn">'+EX[id].n+'</span>'+
+             '<span class="wd">'+(delta===null ? '<em>inicio</em>' :
+                (delta>0 ? '+'+delta.toFixed(1) : (delta<0 ? delta.toFixed(1) : '='))) +'</span>'+
+             '<input type="text" inputmode="decimal" value="'+shown+'" '+
+               'onchange="setBaseKg(\''+id+'\',this.value)"> kg'+
+           '</div>';
+    }
+  }
+  box.innerHTML = h;
+}
+/* Guarda un peso de referencia manual (persistente en DB.baseKg) */
+function setBaseKg(exId, v){
+  v = normNum(v);
+  var n = parseFloat(v);
+  if(isNaN(n) || n < 0){ toast('Escribe un peso válido.'); renderWTable(); return; }
+  if(!DB.baseKg) DB.baseKg = {};
+  DB.baseKg[exId] = n;
+  EX[exId].kg = n;
+  save();
+  toast('✓ '+EX[exId].n+': '+n+' kg');
+  renderWTable();
+}
+function applyBaseKg(){
+  if(!DB.baseKg) return;
+  var id;
+  for(id in DB.baseKg){
+    if(DB.baseKg.hasOwnProperty(id) && EX[id]) EX[id].kg = DB.baseKg[id];
+  }
+}
 /* =====================================================================
    EXPORTAR
    ===================================================================== */
@@ -1940,6 +2932,14 @@ function exportXLS(){
   for(i=0;i<DB.weights.length;i++) wr.push([DB.weights[i].d, DB.weights[i].kg]);
   XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(wr), 'Peso');
 
+  var mr = [['Fecha','Pecho cm','Cintura cm','Cadera cm','Índice cintura/cadera']];
+  for(i=0;i<DB.measures.length;i++){
+    var mm = DB.measures[i];
+    mr.push([mm.d, mm.pecho||'', mm.cintura||'', mm.cadera||'',
+             (mm.cintura&&mm.cadera)?(mm.cintura/mm.cadera).toFixed(2):'']);
+  }
+  XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(mr), 'Medidas');
+
   var pr = [['Primer día de regla']];
   for(i=0;i<DB.periods.length;i++) pr.push([DB.periods[i]]);
   XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(pr), 'Ciclo');
@@ -1967,6 +2967,7 @@ function tab(p){
   document.getElementById('p-'+p).className = 'pane on';
   var btns = document.getElementById('tabs').getElementsByTagName('button');
   for(i=0;i<btns.length;i++) btns[i].className = (btns[i].getAttribute('data-p')===p?'on':'');
+  if(p==='cal') renderCal();
   if(p==='bd') renderBoda();
   if(p==='cy') renderCiclo();
   if(p==='pg') renderProgreso();
@@ -2028,6 +3029,8 @@ function celebrate(){
    ===================================================================== */
 function init(){
   load();
+  applyBaseKg();
+  applyAdjustments();
   var byDate = curWeekByDate();
   cw = DB.pos.w || byDate;
   if(cw < byDate) cw = byDate;      // si abre tras un parón, salta a la semana real
